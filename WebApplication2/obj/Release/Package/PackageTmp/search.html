@@ -1,0 +1,1206 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>-影视搜索-伐木累影院</title>
+    <meta name="keywords" content=",影视搜索-伐木累影院" />
+    <meta name="description" content="影视搜索-伐木累影院" />
+    <link rel="stylesheet" href="static/css/style.css" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <script>var mv_info = false;</script>
+    <script type="text/javascript" src="static/js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="static/js/common_zt.js" charset="utf-8"></script>
+    <script type="text/javascript" src="static/js/jquery.jscrollpane.min.js"></script>
+    <script type="text/javascript" src="static/js/jquery.mousewheel.js"></script>
+    <script type="text/javascript" src="static/js/init.js"></script>
+    <!--[if lte IE 6]> 
+<script src="static/js/dd_belatedpng_0.0.8a.min.js" type="text/javascript"></script> 
+<script type="text/javascript"> 
+DD_belatedPNG.fix('.search-text,.watch-box,.watch-list-triangle,.watch-list-ul li i,.search-list-ul li i,.advance-notice-top h3,.program-top i,.more-list-btn i,.go-share-btn,.dcb-episodes-list li a,.anew-filtrate i,.coming-soon i,.logo a,.more-list-box,.watch-icon,.watch-icon2,.search-null-left,.star-search-text,.search-text2,.cartoon-ul li img');
+</script>
+<![endif]-->
+    <script>var SitePath = '/', SiteAid = '15', SiteTid = '', SiteId = '';</script>
+    <script type="text/javascript" src="static/js/home.js"></script>
+    <script src="static/js/jquery.lazyload.js"></script>
+    <script src="static/js/jquery.autocomplete.js"></script>
+    <script type="text/javascript" src="static/js/phone.js"></script>
+    <script type="text/javascript" src="static/js/other.js"></script>
+</head>
+<body>
+    <div class="movie-wrap">
+        <div class="zt-top" id="zt-top">
+            <div class="zt-top-inner" id="zt-top-inner">
+                <div class="zt-top-left zt-fl">
+                    <ul class="zt-top-classify-ul">
+                        <li><span class="about">伐木累影院，分享最新影视资源</span>
+                    </ul>
+                </div>
+                <div class="zt-top-right zt-fr">
+                    <ul class="zt-top-collect-ul">
+                        <li id="denglu" class="zt-top-home-position"><a rel="nofollow"  href="dengluyemian.html" title="">登陆</a></li></li>
+                        <li><a id="q3"  href="gerenzhongxin.html" >个人中心</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--头部开始-->
+        <div class="movie-header">
+            <div class="movie-header-search">
+                <div class="mhs-inner">
+                    <div class="logo fl"><a href="/" title="伐木累影院">伐木累影院</a></div>
+                    <!--导航-->
+                    <div class="header-nav">
+                        <div class="nav-btn bgray"><span>分类导航</span> </div>
+                        <!--nav-btn-->
+                        <div class="nav-content bgray">
+                            <div class="nav-c-share clearfix">
+                                <a href="/" class="ncs-line fl" title="伐木累影院">首页</a>
+                                <a href="Movie.html" class="ncs-line fl" title="电影">电影</a>
+                                <a href="dianshiju.html" class="ncs-line fl" title="电视剧">电视剧</a>
+                                <a href="zongyi.html" class="ncs-line fl" title="综艺">综艺</a>
+                                <a href="dongman.html" class="ncs-line fl" title="动漫">动漫</a>
+
+                            </div>
+                            <!--nav-c-share-->
+                            <div class="nav-c-share mb0"></div>
+                        </div>
+                        <!--nav-content-->
+                    </div>
+                    <!--header-nav-->
+                    <!--导航结束-->
+                    <div class="search home-search fl">
+                        <div class="search-inner">
+                            <form action="/search/" method="post">
+                                <input type="text" x-webkit-speech="" autocomplete="off" name="wd" id="wd" class="search-text search-text1" onblur="if(this.value==''){ this.value='精彩视频任你搜索';this.style.color='#cfcdcd';}" onfocus="if(this.value=='精彩视频任你搜索'){this.value='';this.style.color='';}" value="精彩视频任你搜索">
+                                <input type="hidden" name="submit" value="search">
+                                <input type="submit" class="search-btn" value="搜索">
+                            </form>
+                            <div class="search-list">
+                                <div class="search-list-left fl">
+                                    <ul class="search-list-ul" id="search-list-ul">
+                                    </ul>
+                                </div>
+                                <div class="search-list-right fr">
+                                    <div class="slr-inner" id="slr-inner"></div>
+                                </div>
+                                <div class="search-list-right"></div>
+                            </div>
+                            <!--search-list-->
+                        </div>
+                        <!--search-inner-->
+                    </div>
+                    <!--search-->
+                    <!--//用户名展示-->
+                     <div style="width:185px; height:90px;border:0px solid red;position:fixed;margin-left:884px;margin-top:10px;">
+                       <label id="q1" >欢迎您：</label>
+                       <input  type="button" id="q2" value=""  disabled="disabled" />
+                       <!--<input  type="button" id="q3" value="个人中心" onclick=""  />-->
+                       
+                       <!--<label id="q2" ></label>-->
+
+                   </div>
+                    <div class="watch-wrap fr">
+                        <div class="watch-record fr">
+                            <div class="watch-box" id="history">
+                                <div class="watch-icon"></div>
+                                观看记录
+            <div class="watch-icon2"></div>
+                            </div>
+                        </div>
+                        <!--watch-record-->
+                    </div>
+                    <!--watch-wrap-->
+                </div>
+                <!--mhs-inner-->
+            </div>
+            <div class="movie-header-menu height-100">
+                <div class="mhm-inner mhm-share">
+                    <div class="mhm-menu">
+                        <ul class="nhm-menu-ul font-100">
+                            <li><a href="/" title="伐木累影院">首页</a></li>
+
+                            <li><a href="Movie.html" title="电影">电影</a></li>
+
+                            <li><a href="dianshiju.html" title="电视剧">电视剧</a></li>
+
+                            <li><a href="zongyi.html" title="综艺">综艺</a></li>
+
+                            <li><a href="dongman.html" title="动漫">动漫</a></li>
+
+
+                        </ul>
+                        <ul class="nhm-menu-ul nmu3 fr mem">
+                            <li class="active-style5 font-100"><a href="/" title="伐木累影院">伐木累影院</a></li>
+                        </ul>
+                        <div class="active-style"></div>
+                    </div>
+                </div>
+                <!--mhs-inner-->
+                <div class="mhm-inner-bottom mhm-share"></div>
+            </div>
+        </div>
+        <!--movie-header-->
+
+        <!--内容开始-->
+        <div class="container">
+            <div class="container-inner">
+                <!--con3-->
+                <!--电影开始-->
+                <div class="con2 margin-bottom-share">
+                    <div class="teleplay">
+                        <div class="teleplayx-left fl">
+                            <div class="splendid-header">
+                                <div class="fl"><span>影视</span>搜索</div>
+                                <ul class="splendid-tab fl">
+                                    <li class="active-style2"><a href="/search/list-pg-1-by-time.html" title="">按更新排序</a></li>
+                                    <li><a href="/search/list-pg-1-by-score.html" title="">按高分排序</a></li>
+                                    <li><a href="/search/list-pg-1-by-hits.html" title="">按人气排序</a></li>
+                                </ul>
+                                <!--splendid-tab-->
+                                <strong class="splendid-page"></strong>
+                            </div>
+                            <!--splendid-header-->
+                            <div class="teleplay-content">
+                                <div class="teleplayx-content-inner" style="display: block;">
+                                    <ul id="myul" class="teleplayx-content-list">
+                                        </ul>
+                                    <!-- <ul class="teleplayx-content-list">
+
+                                        <li class="h-100">
+                                            <div class="showPlay">
+                                                <a href="Movie.htmldetail/53667.html" class="tcl-pic" target="_blank" title="厨霸江湖">
+                                                    <div class="tcl-pic1">
+                                                        <img class="scrollLoading" data-url="http://imgwx5.2345.com/dypcimg/img/1/66/sup200108_223x310.jpg" width="200" height="270" src="static/picture/pic.png" alt="">
+                                                    </div>
+                                                    <div class="tcl-pic2"></div>
+                                                    <div class="tcl-pic3"></div>
+                                                    <p class="tcl-pic4">正片</p>
+                                                </a>
+                                            </div>
+
+                                            <div class="tcl-title">
+                                                <div class="movie-headline1"><a href="Movie.htmldetail/53667.html" target="_blank" title="厨霸江湖">厨霸江湖</a></div>
+                                                <p>分类：<strong><a target='_self' href='Movie.htmllist/6-1---0-0---.html' title="喜剧片" />喜剧片</a></strong></p>
+                                                <p>地区：<strong><a title='大陆' target='_blank' href='/search/results-area-%E5%A4%A7%E9%99%86.html'>大陆</a></strong></p>
+                                                <p>主演：<strong><a title='王宥钧' target='_blank' href='/search/results-starring-%E7%8E%8B%E5%AE%A5%E9%92%A7.html'>王宥钧</a></strong><strong><a title='刘名凯' target='_blank' href='/search/results-starring-%E5%88%98%E5%90%8D%E5%87%AF.html'>刘名凯</a></strong></p>
+                                                <p>导演：<strong><a title='毕基' target='_blank' href='/search/results-directed-%E6%AF%95%E5%9F%BA.html'>毕基</a></strong></p>
+                                            </div>
+
+                                        </li>
+
+                                        <li class="h-100">
+                                            <div class="showPlay">
+                                                <a href="Movie.htmldetail/53666.html" class="tcl-pic" target="_blank" title="桌球小子之球神诞生">
+                                                    <div class="tcl-pic1">
+                                                        <img class="scrollLoading" data-url="http://imgwx3.2345.com/dypcimg/img/d/66/sup200099_223x310.jpg" width="200" height="270" src="static/picture/pic.png" alt="">
+                                                    </div>
+                                                    <div class="tcl-pic2"></div>
+                                                    <div class="tcl-pic3"></div>
+                                                    <p class="tcl-pic4">正片</p>
+                                                </a>
+                                            </div>
+
+                                            <div class="tcl-title">
+                                                <div class="movie-headline1"><a href="Movie.htmldetail/53666.html" target="_blank" title="桌球小子之球神诞生">桌球小子之球神诞生</a></div>
+                                                <p>分类：<strong><a target='_self' href='Movie.htmllist/7-1---0-0---.html' title="爱情片" />爱情片</a></strong></p>
+                                                <p>地区：<strong><a title='大陆' target='_blank' href='/search/results-area-%E5%A4%A7%E9%99%86.html'>大陆</a></strong></p>
+                                                <p>主演：<strong><a title='王圣砚' target='_blank' href='/search/results-starring-%E7%8E%8B%E5%9C%A3%E7%A0%9A.html'>王圣砚</a></strong><strong><a title='石欣' target='_blank' href='/search/results-starring-%E7%9F%B3%E6%AC%A3.html'>石欣</a></strong></p>
+                                                <p>导演：<strong><a title='张一丁' target='_blank' href='/search/results-directed-%E5%BC%A0%E4%B8%80%E4%B8%81.html'>张一丁</a></strong></p>
+                                            </div>
+
+                                        </li>
+
+                                        <li class="h-100">
+                                            <div class="showPlay">
+                                                <a href="Movie.htmldetail/53665.html" class="tcl-pic" target="_blank" title="消失的世界">
+                                                    <div class="tcl-pic1">
+                                                        <img class="scrollLoading" data-url="http://imgwx5.2345.com/dypcimg/img/6/66/sup200100_223x310.jpg" width="200" height="270" src="static/picture/pic.png" alt="">
+                                                    </div>
+                                                    <div class="tcl-pic2"></div>
+                                                    <div class="tcl-pic3"></div>
+                                                    <p class="tcl-pic4">正片</p>
+                                                </a>
+                                            </div>
+
+                                            <div class="tcl-title">
+                                                <div class="movie-headline1"><a href="Movie.htmldetail/53665.html" target="_blank" title="消失的世界">消失的世界</a></div>
+                                                <p>分类：<strong><a target='_self' href='Movie.htmllist/8-1---0-0---.html' title="科幻片" />科幻片</a></strong></p>
+                                                <p>地区：<strong><a title='大陆' target='_blank' href='/search/results-area-%E5%A4%A7%E9%99%86.html'>大陆</a></strong></p>
+                                                <p>主演：<strong><a title='刘紫鸣' target='_blank' href='/search/results-starring-%E5%88%98%E7%B4%AB%E9%B8%A3.html'>刘紫鸣</a></strong><strong><a title='Tamra' target='_blank' href='/search/results-starring-Tamra.html'>Tamra</a></strong><strong><a title='Dae' target='_blank' href='/search/results-starring-Dae.html'>Dae</a></strong></p>
+                                                <p>导演：<strong><a title='Dallas' target='_blank' href='/search/results-directed-Dallas.html'>Dallas</a></strong><strong><a title='King' target='_blank' href='/search/results-directed-King.html'>King</a></strong></p>
+                                            </div>
+
+                                        </li>
+
+                                        <li class="h-100">
+                                            <div class="showPlay">
+                                                <a href="Movie.htmldetail/53664.html" class="tcl-pic" target="_blank" title="超能联盟之极品天使">
+                                                    <div class="tcl-pic1">
+                                                        <img class="scrollLoading" data-url="http://imgwx5.2345.com/dypcimg/img/f/66/sup200101_223x310.jpg" width="200" height="270" src="static/picture/pic.png" alt="">
+                                                    </div>
+                                                    <div class="tcl-pic2"></div>
+                                                    <div class="tcl-pic3"></div>
+                                                    <p class="tcl-pic4">正片</p>
+                                                </a>
+                                            </div>
+
+                                            <div class="tcl-title">
+                                                <div class="movie-headline1"><a href="Movie.htmldetail/53664.html" target="_blank" title="超能联盟之极品天使">超能联盟之极品天使</a></div>
+                                                <p>分类：<strong><a target='_self' href='Movie.htmllist/6-1---0-0---.html' title="喜剧片" />喜剧片</a></strong></p>
+                                                <p>地区：<strong><a title='大陆' target='_blank' href='/search/results-area-%E5%A4%A7%E9%99%86.html'>大陆</a></strong></p>
+                                                <p>主演：<strong><a title='赵雷棋' target='_blank' href='/search/results-starring-%E8%B5%B5%E9%9B%B7%E6%A3%8B.html'>赵雷棋</a></strong></p>
+                                                <p>导演：<strong><a title='黄俊琦' target='_blank' href='/search/results-directed-%E9%BB%84%E4%BF%8A%E7%90%A6.html'>黄俊琦</a></strong></p>
+                                            </div>
+
+                                        </li>
+
+                                        <li class="h-100">
+                                            <div class="showPlay">
+                                                <a href="/shenqu/detail/53663.html" class="tcl-pic" target="_blank" title="爱过了也伤过了~">
+                                                    <div class="tcl-pic1">
+                                                        <img class="scrollLoading" data-url="http://godsong.bs2dl.yy.com/djVjODYxZmI0M2EzZTQ3NzNlYmUyYzAwNDY3ZGY0NzlmMTkxODYzNDI3NTY_23.jpg" width="200" height="270" src="static/picture/pic.png" alt="">
+                                                    </div>
+                                                    <div class="tcl-pic2"></div>
+                                                    <div class="tcl-pic3"></div>
+                                                    <p class="tcl-pic4">高清</p>
+                                                </a>
+                                            </div>
+
+                                            <div class="tcl-title">
+                                                <div class="movie-headline1"><a href="/shenqu/detail/53663.html" target="_blank" title="爱过了也伤过了~">爱过了也伤过了~</a></div>
+                                                <p>分类：<strong><a target='_self' href='/shenqu/list/21-1---0-0---.html' title="神曲" />神曲</a></strong></p>
+                                                <p>地区：<strong><a title='大陆' target='_blank' href='/search/results-area-%E5%A4%A7%E9%99%86.html'>大陆</a></strong></p>
+                                                <p>主演：<strong><a title='七彩子淇' target='_blank' href='/search/results-starring-%E4%B8%83%E5%BD%A9%E5%AD%90%E6%B7%87.html'>七彩子淇</a></strong></p>
+                                                <p>导演：<strong><a title='七彩子淇' target='_blank' href='/search/results-directed-%E4%B8%83%E5%BD%A9%E5%AD%90%E6%B7%87.html'>七彩子淇</a></strong></p>
+                                            </div>
+
+                                        </li>
+
+                                        <li class="h-100">
+                                            <div class="showPlay">
+                                                <a href="/shenqu/detail/53662.html" class="tcl-pic" target="_blank" title="初夏舞蹈">
+                                                    <div class="tcl-pic1">
+                                                        <img class="scrollLoading" data-url="http:////godsong.bs2dl.yy.com/djJmZjkzYTI5ODgwYzNjMGQ2ZDhmMDM5ODk5ZDBkYzk2MTkxODU1NzA4NzE_21.jpg" width="200" height="270" src="static/picture/pic.png" alt="">
+                                                    </div>
+                                                    <div class="tcl-pic2"></div>
+                                                    <div class="tcl-pic3"></div>
+                                                    <p class="tcl-pic4">高清</p>
+                                                </a>
+                                            </div>
+
+                                            <div class="tcl-title">
+                                                <div class="movie-headline1"><a href="/shenqu/detail/53662.html" target="_blank" title="初夏舞蹈">初夏舞蹈</a></div>
+                                                <p>分类：<strong><a target='_self' href='/shenqu/list/21-1---0-0---.html' title="神曲" />神曲</a></strong></p>
+                                                <p>地区：<strong><a title='大陆' target='_blank' href='/search/results-area-%E5%A4%A7%E9%99%86.html'>大陆</a></strong></p>
+                                                <p>主演：<strong><a title='初夏' target='_blank' href='/search/results-starring-%E5%88%9D%E5%A4%8F.html'>初夏</a></strong></p>
+                                                <p>导演：<strong><a title='初夏' target='_blank' href='/search/results-directed-%E5%88%9D%E5%A4%8F.html'>初夏</a></strong></p>
+                                            </div>
+
+                                        </li>
+
+                                        <li class="h-100">
+                                            <div class="showPlay">
+                                                <a href="/shenqu/detail/53661.html" class="tcl-pic" target="_blank" title="让一切随风">
+                                                    <div class="tcl-pic1">
+                                                        <img class="scrollLoading" data-url="http://godsong.bs2dl.yy.com/djA2MTcxMjI0NGExN2I2MmUyMTZkYjQyNTljM2I1MjQ0MTkxODMzMzYxNjc_26.jpg" width="200" height="270" src="static/picture/pic.png" alt="">
+                                                    </div>
+                                                    <div class="tcl-pic2"></div>
+                                                    <div class="tcl-pic3"></div>
+                                                    <p class="tcl-pic4">高清</p>
+                                                </a>
+                                            </div>
+
+                                            <div class="tcl-title">
+                                                <div class="movie-headline1"><a href="/shenqu/detail/53661.html" target="_blank" title="让一切随风">让一切随风</a></div>
+                                                <p>分类：<strong><a target='_self' href='/shenqu/list/21-1---0-0---.html' title="神曲" />神曲</a></strong></p>
+                                                <p>地区：<strong><a title='大陆' target='_blank' href='/search/results-area-%E5%A4%A7%E9%99%86.html'>大陆</a></strong></p>
+                                                <p>主演：<strong><a title='YY乐神' target='_blank' href='/search/results-starring-YY%E4%B9%90%E7%A5%9E.html'>YY乐神</a></strong></p>
+                                                <p>导演：<strong><a title='YY乐神' target='_blank' href='/search/results-directed-YY%E4%B9%90%E7%A5%9E.html'>YY乐神</a></strong></p>
+                                            </div>
+
+                                        </li>
+
+                                        <li class="h-100">
+                                            <div class="showPlay">
+                                                <a href="/shenqu/detail/53660.html" class="tcl-pic" target="_blank" title="说散就散">
+                                                    <div class="tcl-pic1">
+                                                        <img class="scrollLoading" data-url="http://godsong.bs2dl.yy.com/dmNhNmYzYzAxNmQ3YjM4MzI1ZmE0OWM0YWExOTA3MjgxMTkxODQ1MzgxOTI_24.jpg" width="200" height="270" src="static/picture/pic.png" alt="">
+                                                    </div>
+                                                    <div class="tcl-pic2"></div>
+                                                    <div class="tcl-pic3"></div>
+                                                    <p class="tcl-pic4">高清</p>
+                                                </a>
+                                            </div>
+
+                                            <div class="tcl-title">
+                                                <div class="movie-headline1"><a href="/shenqu/detail/53660.html" target="_blank" title="说散就散">说散就散</a></div>
+                                                <p>分类：<strong><a target='_self' href='/shenqu/list/21-1---0-0---.html' title="神曲" />神曲</a></strong></p>
+                                                <p>地区：<strong><a title='大陆' target='_blank' href='/search/results-area-%E5%A4%A7%E9%99%86.html'>大陆</a></strong></p>
+                                                <p>主演：<strong><a title='小诗妹' target='_blank' href='/search/results-starring-%E5%B0%8F%E8%AF%97%E5%A6%B9.html'>小诗妹</a></strong></p>
+                                                <p>导演：<strong><a title='小诗妹' target='_blank' href='/search/results-directed-%E5%B0%8F%E8%AF%97%E5%A6%B9.html'>小诗妹</a></strong></p>
+                                            </div>
+
+                                        </li>
+
+                                        <li class="h-100">
+                                            <div class="showPlay">
+                                                <a href="/shenqu/detail/53659.html" class="tcl-pic" target="_blank" title="珍宝 街舞">
+                                                    <div class="tcl-pic1">
+                                                        <img class="scrollLoading" data-url="http:////godsong.bs2dl.yy.com/dmNhNmYzYzAxNmQ3YjM4MzI1ZmE0OWM0YWExOTA3MjgxMTkxODQ0MzMyMzg_8.jpg" width="200" height="270" src="static/picture/pic.png" alt="">
+                                                    </div>
+                                                    <div class="tcl-pic2"></div>
+                                                    <div class="tcl-pic3"></div>
+                                                    <p class="tcl-pic4">高清</p>
+                                                </a>
+                                            </div>
+
+                                            <div class="tcl-title">
+                                                <div class="movie-headline1"><a href="/shenqu/detail/53659.html" target="_blank" title="珍宝 街舞">珍宝 街舞</a></div>
+                                                <p>分类：<strong><a target='_self' href='/shenqu/list/21-1---0-0---.html' title="神曲" />神曲</a></strong></p>
+                                                <p>地区：<strong><a title='大陆' target='_blank' href='/search/results-area-%E5%A4%A7%E9%99%86.html'>大陆</a></strong></p>
+                                                <p>主演：<strong><a title='Dz珍宝er' target='_blank' href='/search/results-starring-Dz%E7%8F%8D%E5%AE%9Der.html'>Dz珍宝er</a></strong></p>
+                                                <p>导演：<strong><a title='Dz珍宝er' target='_blank' href='/search/results-directed-Dz%E7%8F%8D%E5%AE%9Der.html'>Dz珍宝er</a></strong></p>
+                                            </div>
+
+                                        </li>
+
+                                        <li class="h-100">
+                                            <div class="showPlay">
+                                                <a href="/shenqu/detail/53658.html" class="tcl-pic" target="_blank" title="情人迷">
+                                                    <div class="tcl-pic1">
+                                                        <img class="scrollLoading" data-url="http://godsong.bs2dl.yy.com/djdmMjU2YTI5Mzg3ZTUzMTNiN2E3YWFjNjRkYzk3NmY3MTkxODc1MTk3Mzc_26.jpg" width="200" height="270" src="static/picture/pic.png" alt="">
+                                                    </div>
+                                                    <div class="tcl-pic2"></div>
+                                                    <div class="tcl-pic3"></div>
+                                                    <p class="tcl-pic4">高清</p>
+                                                </a>
+                                            </div>
+
+                                            <div class="tcl-title">
+                                                <div class="movie-headline1"><a href="/shenqu/detail/53658.html" target="_blank" title="情人迷">情人迷</a></div>
+                                                <p>分类：<strong><a target='_self' href='/shenqu/list/21-1---0-0---.html' title="神曲" />神曲</a></strong></p>
+                                                <p>地区：<strong><a title='大陆' target='_blank' href='/search/results-area-%E5%A4%A7%E9%99%86.html'>大陆</a></strong></p>
+                                                <p>主演：<strong><a title='小桔子' target='_blank' href='/search/results-starring-%E5%B0%8F%E6%A1%94%E5%AD%90.html'>小桔子</a></strong></p>
+                                                <p>导演：<strong><a title='小桔子' target='_blank' href='/search/results-directed-%E5%B0%8F%E6%A1%94%E5%AD%90.html'>小桔子</a></strong></p>
+                                            </div>
+
+                                        </li>
+
+                                        <li class="h-100">
+                                            <div class="showPlay">
+                                                <a href="/shenqu/detail/53657.html" class="tcl-pic" target="_blank" title="长腿女神椅子舞">
+                                                    <div class="tcl-pic1">
+                                                        <img class="scrollLoading" data-url="http:////godsong.bs2dl.yy.com/djdmMjU2YTI5Mzg3ZTUzMTNiN2E3YWFjNjRkYzk3NmY3MTkxODc1Mzg4NTg_22.jpg" width="200" height="270" src="static/picture/pic.png" alt="">
+                                                    </div>
+                                                    <div class="tcl-pic2"></div>
+                                                    <div class="tcl-pic3"></div>
+                                                    <p class="tcl-pic4">高清</p>
+                                                </a>
+                                            </div>
+
+                                            <div class="tcl-title">
+                                                <div class="movie-headline1"><a href="/shenqu/detail/53657.html" target="_blank" title="长腿女神椅子舞">长腿女神椅子舞</a></div>
+                                                <p>分类：<strong><a target='_self' href='/shenqu/list/21-1---0-0---.html' title="神曲" />神曲</a></strong></p>
+                                                <p>地区：<strong><a title='大陆' target='_blank' href='/search/results-area-%E5%A4%A7%E9%99%86.html'>大陆</a></strong></p>
+                                                <p>主演：<strong><a title='小虎瑶' target='_blank' href='/search/results-starring-%E5%B0%8F%E8%99%8E%E7%91%B6.html'>小虎瑶</a></strong></p>
+                                                <p>导演：<strong><a title='小虎瑶' target='_blank' href='/search/results-directed-%E5%B0%8F%E8%99%8E%E7%91%B6.html'>小虎瑶</a></strong></p>
+                                            </div>
+
+                                        </li>
+
+                                        <li class="h-100">
+                                            <div class="showPlay">
+                                                <a href="/shenqu/detail/53656.html" class="tcl-pic" target="_blank" title="不仅仅是喜欢 - 小谢谢">
+                                                    <div class="tcl-pic1">
+                                                        <img class="scrollLoading" data-url="http://godsong.bs2dl.yy.com/djA2MTcxMjI0NGExN2I2MmUyMTZkYjQyNTljM2I1MjQ0MTkxODMzNDUwNjU_22.jpg" width="200" height="270" src="static/picture/pic.png" alt="">
+                                                    </div>
+                                                    <div class="tcl-pic2"></div>
+                                                    <div class="tcl-pic3"></div>
+                                                    <p class="tcl-pic4">高清</p>
+                                                </a>
+                                            </div>
+
+                                            <div class="tcl-title">
+                                                <div class="movie-headline1"><a href="/shenqu/detail/53656.html" target="_blank" title="不仅仅是喜欢 - 小谢谢">不仅仅是喜欢 - 小谢谢</a></div>
+                                                <p>分类：<strong><a target='_self' href='/shenqu/list/21-1---0-0---.html' title="神曲" />神曲</a></strong></p>
+                                                <p>地区：<strong><a title='大陆' target='_blank' href='/search/results-area-%E5%A4%A7%E9%99%86.html'>大陆</a></strong></p>
+                                                <p>主演：<strong><a title='.【乐天传媒】小谢谢' target='_blank' href='/search/results-starring-.%E3%80%90%E4%B9%90%E5%A4%A9%E4%BC%A0%E5%AA%92%E3%80%91%E5%B0%8F%E8%B0%A2%E8%B0%A2.html'>.【乐天传媒】小谢谢</a></strong><strong><a title='【小小确幸】' target='_blank' href='/search/results-starring-%E3%80%90%E5%B0%8F%E5%B0%8F%E7%A1%AE%E5%B9%B8%E3%80%91.html'>【小小确幸】</a></strong></p>
+                                                <p>导演：<strong><a title='.【乐天传媒】小谢谢' target='_blank' href='/search/results-directed-.%E3%80%90%E4%B9%90%E5%A4%A9%E4%BC%A0%E5%AA%92%E3%80%91%E5%B0%8F%E8%B0%A2%E8%B0%A2.html'>.【乐天传媒】小谢谢</a></strong><strong><a title='【小小确幸】' target='_blank' href='/search/results-directed-%E3%80%90%E5%B0%8F%E5%B0%8F%E7%A1%AE%E5%B9%B8%E3%80%91.html'>【小小确幸】</a></strong></p>
+                                            </div>
+
+                                        </li>
+
+                                        <li class="h-100">
+                                            <div class="showPlay">
+                                                <a href="/shenqu/detail/53655.html" class="tcl-pic" target="_blank" title="思美人">
+                                                    <div class="tcl-pic1">
+                                                        <img class="scrollLoading" data-url="http:////godsong.bs2dl.yy.com/dmNhNmYzYzAxNmQ3YjM4MzI1ZmE0OWM0YWExOTA3MjgxMTkxODQ0MjYxNDg_29.jpg" width="200" height="270" src="static/picture/pic.png" alt="">
+                                                    </div>
+                                                    <div class="tcl-pic2"></div>
+                                                    <div class="tcl-pic3"></div>
+                                                    <p class="tcl-pic4">高清</p>
+                                                </a>
+                                            </div>
+
+                                            <div class="tcl-title">
+                                                <div class="movie-headline1"><a href="/shenqu/detail/53655.html" target="_blank" title="思美人">思美人</a></div>
+                                                <p>分类：<strong><a target='_self' href='/shenqu/list/21-1---0-0---.html' title="神曲" />神曲</a></strong></p>
+                                                <p>地区：<strong><a title='大陆' target='_blank' href='/search/results-area-%E5%A4%A7%E9%99%86.html'>大陆</a></strong></p>
+                                                <p>主演：<strong><a title='小珍珠' target='_blank' href='/search/results-starring-%E5%B0%8F%E7%8F%8D%E7%8F%A0.html'>小珍珠</a></strong></p>
+                                                <p>导演：<strong><a title='小珍珠' target='_blank' href='/search/results-directed-%E5%B0%8F%E7%8F%8D%E7%8F%A0.html'>小珍珠</a></strong></p>
+                                            </div>
+
+                                        </li>
+
+                                        <li class="h-100">
+                                            <div class="showPlay">
+                                                <a href="/shenqu/detail/53654.html" class="tcl-pic" target="_blank" title="21608漫妮《爱火》DJ-每晚八点">
+                                                    <div class="tcl-pic1">
+                                                        <img class="scrollLoading" data-url="http://godsong.bs2dl.yy.com/djU2MmUzYzYwNTVjOGFlYTkzNWFhZjQ3MWI1MGNmZTQzMTkxNTQ4MDU3MjE_27.jpg" width="200" height="270" src="static/picture/pic.png" alt="">
+                                                    </div>
+                                                    <div class="tcl-pic2"></div>
+                                                    <div class="tcl-pic3"></div>
+                                                    <p class="tcl-pic4">高清</p>
+                                                </a>
+                                            </div>
+
+                                            <div class="tcl-title">
+                                                <div class="movie-headline1"><a href="/shenqu/detail/53654.html" target="_blank" title="21608漫妮《爱火》DJ-每晚八点">21608漫妮《爱火》DJ-每晚八点</a></div>
+                                                <p>分类：<strong><a target='_self' href='/shenqu/list/21-1---0-0---.html' title="神曲" />神曲</a></strong></p>
+                                                <p>地区：<strong><a title='大陆' target='_blank' href='/search/results-area-%E5%A4%A7%E9%99%86.html'>大陆</a></strong></p>
+                                                <p>主演：<strong><a title='漫妮音乐sp' target='_blank' href='/search/results-starring-%E6%BC%AB%E5%A6%AE%E9%9F%B3%E4%B9%90sp.html'>漫妮音乐sp</a></strong></p>
+                                                <p>导演：<strong><a title='漫妮音乐sp' target='_blank' href='/search/results-directed-%E6%BC%AB%E5%A6%AE%E9%9F%B3%E4%B9%90sp.html'>漫妮音乐sp</a></strong></p>
+                                            </div>
+
+                                        </li>
+
+                                        <li class="h-100">
+                                            <div class="showPlay">
+                                                <a href="/shenqu/detail/53653.html" class="tcl-pic" target="_blank" title="再见吧亲爱的你~漫妮">
+                                                    <div class="tcl-pic1">
+                                                        <img class="scrollLoading" data-url="http://godsong.bs2dl.yy.com/dmNhNmYzYzAxNmQ3YjM4MzI1ZmE0OWM0YWExOTA3MjgxMTkxODQ1MzczMDU_23.jpg" width="200" height="270" src="static/picture/pic.png" alt="">
+                                                    </div>
+                                                    <div class="tcl-pic2"></div>
+                                                    <div class="tcl-pic3"></div>
+                                                    <p class="tcl-pic4">高清</p>
+                                                </a>
+                                            </div>
+
+                                            <div class="tcl-title">
+                                                <div class="movie-headline1"><a href="/shenqu/detail/53653.html" target="_blank" title="再见吧亲爱的你~漫妮">再见吧亲爱的你~漫妮</a></div>
+                                                <p>分类：<strong><a target='_self' href='/shenqu/list/21-1---0-0---.html' title="神曲" />神曲</a></strong></p>
+                                                <p>地区：<strong><a title='大陆' target='_blank' href='/search/results-area-%E5%A4%A7%E9%99%86.html'>大陆</a></strong></p>
+                                                <p>主演：<strong><a title='漫妮' target='_blank' href='/search/results-starring-%E6%BC%AB%E5%A6%AE.html'>漫妮</a></strong></p>
+                                                <p>导演：<strong><a title='漫妮' target='_blank' href='/search/results-directed-%E6%BC%AB%E5%A6%AE.html'>漫妮</a></strong></p>
+                                            </div>
+
+                                        </li>
+
+                                        <li class="h-100">
+                                            <div class="showPlay">
+                                                <a href="/shenqu/detail/53652.html" class="tcl-pic" target="_blank" title="牛在飞">
+                                                    <div class="tcl-pic1">
+                                                        <img class="scrollLoading" data-url="http://godsong.bs2dl.yy.com/djdmMjU2YTI5Mzg3ZTUzMTNiN2E3YWFjNjRkYzk3NmY3MTkxODc1NDAzMTY_24.jpg" width="200" height="270" src="static/picture/pic.png" alt="">
+                                                    </div>
+                                                    <div class="tcl-pic2"></div>
+                                                    <div class="tcl-pic3"></div>
+                                                    <p class="tcl-pic4">高清</p>
+                                                </a>
+                                            </div>
+
+                                            <div class="tcl-title">
+                                                <div class="movie-headline1"><a href="/shenqu/detail/53652.html" target="_blank" title="牛在飞">牛在飞</a></div>
+                                                <p>分类：<strong><a target='_self' href='/shenqu/list/21-1---0-0---.html' title="神曲" />神曲</a></strong></p>
+                                                <p>地区：<strong><a title='大陆' target='_blank' href='/search/results-area-%E5%A4%A7%E9%99%86.html'>大陆</a></strong></p>
+                                                <p>主演：<strong><a title='小虾米' target='_blank' href='/search/results-starring-%E5%B0%8F%E8%99%BE%E7%B1%B3.html'>小虾米</a></strong></p>
+                                                <p>导演：<strong><a title='小虾米' target='_blank' href='/search/results-directed-%E5%B0%8F%E8%99%BE%E7%B1%B3.html'>小虾米</a></strong></p>
+                                            </div>
+
+                                        </li>
+
+                                        <li class="h-100">
+                                            <div class="showPlay">
+                                                <a href="/shenqu/detail/53651.html" class="tcl-pic" target="_blank" title="不后悔遇到你">
+                                                    <div class="tcl-pic1">
+                                                        <img class="scrollLoading" data-url="http://godsong.bs2dl.yy.com/djA2MTcxMjI0NGExN2I2MmUyMTZkYjQyNTljM2I1MjQ0MTkxODMzNDI5NjI_24.jpg" width="200" height="270" src="static/picture/pic.png" alt="">
+                                                    </div>
+                                                    <div class="tcl-pic2"></div>
+                                                    <div class="tcl-pic3"></div>
+                                                    <p class="tcl-pic4">高清</p>
+                                                </a>
+                                            </div>
+
+                                            <div class="tcl-title">
+                                                <div class="movie-headline1"><a href="/shenqu/detail/53651.html" target="_blank" title="不后悔遇到你">不后悔遇到你</a></div>
+                                                <p>分类：<strong><a target='_self' href='/shenqu/list/21-1---0-0---.html' title="神曲" />神曲</a></strong></p>
+                                                <p>地区：<strong><a title='大陆' target='_blank' href='/search/results-area-%E5%A4%A7%E9%99%86.html'>大陆</a></strong></p>
+                                                <p>主演：<strong><a title='依er' target='_blank' href='/search/results-starring-%E4%BE%9Der.html'>依er</a></strong></p>
+                                                <p>导演：<strong><a title='依er' target='_blank' href='/search/results-directed-%E4%BE%9Der.html'>依er</a></strong></p>
+                                            </div>
+
+                                        </li>
+
+                                        <li class="h-100">
+                                            <div class="showPlay">
+                                                <a href="/shenqu/detail/53650.html" class="tcl-pic" target="_blank" title="no">
+                                                    <div class="tcl-pic1">
+                                                        <img class="scrollLoading" data-url="http:////godsong.bs2dl.yy.com/djVjODYxZmI0M2EzZTQ3NzNlYmUyYzAwNDY3ZGY0NzlmMTkxODYyNDY3MDI_22.jpg" width="200" height="270" src="static/picture/pic.png" alt="">
+                                                    </div>
+                                                    <div class="tcl-pic2"></div>
+                                                    <div class="tcl-pic3"></div>
+                                                    <p class="tcl-pic4">高清</p>
+                                                </a>
+                                            </div>
+
+                                            <div class="tcl-title">
+                                                <div class="movie-headline1"><a href="/shenqu/detail/53650.html" target="_blank" title="no">no</a></div>
+                                                <p>分类：<strong><a target='_self' href='/shenqu/list/21-1---0-0---.html' title="神曲" />神曲</a></strong></p>
+                                                <p>地区：<strong><a title='大陆' target='_blank' href='/search/results-area-%E5%A4%A7%E9%99%86.html'>大陆</a></strong></p>
+                                                <p>主演：<strong><a title='兰儿' target='_blank' href='/search/results-starring-%E5%85%B0%E5%84%BF.html'>兰儿</a></strong></p>
+                                                <p>导演：<strong><a title='兰儿' target='_blank' href='/search/results-directed-%E5%85%B0%E5%84%BF.html'>兰儿</a></strong></p>
+                                            </div>
+
+                                        </li>
+
+                                        <li class="h-100">
+                                            <div class="showPlay">
+                                                <a href="/shenqu/detail/53649.html" class="tcl-pic" target="_blank" title="讲真的">
+                                                    <div class="tcl-pic1">
+                                                        <img class="scrollLoading" data-url="http://godsong.bs2dl.yy.com/djdmMjU2YTI5Mzg3ZTUzMTNiN2E3YWFjNjRkYzk3NmY3MTkxODc1MzkzNzY_24.jpg" width="200" height="270" src="static/picture/pic.png" alt="">
+                                                    </div>
+                                                    <div class="tcl-pic2"></div>
+                                                    <div class="tcl-pic3"></div>
+                                                    <p class="tcl-pic4">高清</p>
+                                                </a>
+                                            </div>
+
+                                            <div class="tcl-title">
+                                                <div class="movie-headline1"><a href="/shenqu/detail/53649.html" target="_blank" title="讲真的">讲真的</a></div>
+                                                <p>分类：<strong><a target='_self' href='/shenqu/list/21-1---0-0---.html' title="神曲" />神曲</a></strong></p>
+                                                <p>地区：<strong><a title='大陆' target='_blank' href='/search/results-area-%E5%A4%A7%E9%99%86.html'>大陆</a></strong></p>
+                                                <p>主演：<strong><a title='【翔宇】-寻笛' target='_blank' href='/search/results-starring-%E3%80%90%E7%BF%94%E5%AE%87%E3%80%91-%E5%AF%BB%E7%AC%9B.html'>【翔宇】-寻笛</a></strong></p>
+                                                <p>导演：<strong><a title='【翔宇】-寻笛' target='_blank' href='/search/results-directed-%E3%80%90%E7%BF%94%E5%AE%87%E3%80%91-%E5%AF%BB%E7%AC%9B.html'>【翔宇】-寻笛</a></strong></p>
+                                            </div>
+
+                                        </li>
+
+                                        <li class="h-100">
+                                            <div class="showPlay">
+                                                <a href="/shenqu/detail/53648.html" class="tcl-pic" target="_blank" title="21608漫妮《哥哥送我一支穿云箭》每晚八点">
+                                                    <div class="tcl-pic1">
+                                                        <img class="scrollLoading" data-url="http://godsong.bs2dl.yy.com/djU2MmUzYzYwNTVjOGFlYTkzNWFhZjQ3MWI1MGNmZTQzMTkxNTQ4MjA2NTM_23.jpg" width="200" height="270" src="static/picture/pic.png" alt="">
+                                                    </div>
+                                                    <div class="tcl-pic2"></div>
+                                                    <div class="tcl-pic3"></div>
+                                                    <p class="tcl-pic4">高清</p>
+                                                </a>
+                                            </div>
+
+                                            <div class="tcl-title">
+                                                <div class="movie-headline1"><a href="/shenqu/detail/53648.html" target="_blank" title="21608漫妮《哥哥送我一支穿云箭》每晚八点">21608漫妮《哥哥送我一支穿云箭》每晚八点</a></div>
+                                                <p>分类：<strong><a target='_self' href='/shenqu/list/21-1---0-0---.html' title="神曲" />神曲</a></strong></p>
+                                                <p>地区：<strong><a title='大陆' target='_blank' href='/search/results-area-%E5%A4%A7%E9%99%86.html'>大陆</a></strong></p>
+                                                <p>主演：<strong><a title='漫妮音乐sp' target='_blank' href='/search/results-starring-%E6%BC%AB%E5%A6%AE%E9%9F%B3%E4%B9%90sp.html'>漫妮音乐sp</a></strong></p>
+                                                <p>导演：<strong><a title='漫妮音乐sp' target='_blank' href='/search/results-directed-%E6%BC%AB%E5%A6%AE%E9%9F%B3%E4%B9%90sp.html'>漫妮音乐sp</a></strong></p>
+                                            </div>
+
+                                        </li>
+
+                                        <li class="h-100">
+                                            <div class="showPlay">
+                                                <a href="/shenqu/detail/53647.html" class="tcl-pic" target="_blank" title="文er - 御龙归字谣">
+                                                    <div class="tcl-pic1">
+                                                        <img class="scrollLoading" data-url="http://godsong.bs2dl.yy.com/dmNhNmYzYzAxNmQ3YjM4MzI1ZmE0OWM0YWExOTA3MjgxMTkxODQ1Mzk1OTc_22.jpg" width="200" height="270" src="static/picture/pic.png" alt="">
+                                                    </div>
+                                                    <div class="tcl-pic2"></div>
+                                                    <div class="tcl-pic3"></div>
+                                                    <p class="tcl-pic4">高清</p>
+                                                </a>
+                                            </div>
+
+                                            <div class="tcl-title">
+                                                <div class="movie-headline1"><a href="/shenqu/detail/53647.html" target="_blank" title="文er - 御龙归字谣">文er - 御龙归字谣</a></div>
+                                                <p>分类：<strong><a target='_self' href='/shenqu/list/21-1---0-0---.html' title="神曲" />神曲</a></strong></p>
+                                                <p>地区：<strong><a title='大陆' target='_blank' href='/search/results-area-%E5%A4%A7%E9%99%86.html'>大陆</a></strong></p>
+                                                <p>主演：<strong><a title='文er' target='_blank' href='/search/results-starring-%E6%96%87er.html'>文er</a></strong></p>
+                                                <p>导演：<strong><a title='文er' target='_blank' href='/search/results-directed-%E6%96%87er.html'>文er</a></strong></p>
+                                            </div>
+
+                                        </li>
+
+                                        <li class="h-100">
+                                            <div class="showPlay">
+                                                <a href="/shenqu/detail/53646.html" class="tcl-pic" target="_blank" title="文er 三轮车">
+                                                    <div class="tcl-pic1">
+                                                        <img class="scrollLoading" data-url="http:////godsong.bs2dl.yy.com/djU2MmUzYzYwNTVjOGFlYTkzNWFhZjQ3MWI1MGNmZTQzMTkxNTQ2NTk2MDI_11.jpg" width="200" height="270" src="static/picture/pic.png" alt="">
+                                                    </div>
+                                                    <div class="tcl-pic2"></div>
+                                                    <div class="tcl-pic3"></div>
+                                                    <p class="tcl-pic4">高清</p>
+                                                </a>
+                                            </div>
+
+                                            <div class="tcl-title">
+                                                <div class="movie-headline1"><a href="/shenqu/detail/53646.html" target="_blank" title="文er 三轮车">文er 三轮车</a></div>
+                                                <p>分类：<strong><a target='_self' href='/shenqu/list/21-1---0-0---.html' title="神曲" />神曲</a></strong></p>
+                                                <p>地区：<strong><a title='大陆' target='_blank' href='/search/results-area-%E5%A4%A7%E9%99%86.html'>大陆</a></strong></p>
+                                                <p>主演：<strong><a title='小猪' target='_blank' href='/search/results-starring-%E5%B0%8F%E7%8C%AA.html'>小猪</a></strong></p>
+                                                <p>导演：<strong><a title='小猪' target='_blank' href='/search/results-directed-%E5%B0%8F%E7%8C%AA.html'>小猪</a></strong></p>
+                                            </div>
+
+                                        </li>
+
+                                        <li class="h-100">
+                                            <div class="showPlay">
+                                                <a href="/shenqu/detail/53645.html" class="tcl-pic" target="_blank" title="21608漫妮《真不是闹着玩》每晚八点">
+                                                    <div class="tcl-pic1">
+                                                        <img class="scrollLoading" data-url="http://godsong.bs2dl.yy.com/djJmZjkzYTI5ODgwYzNjMGQ2ZDhmMDM5ODk5ZDBkYzk2MTkxODU4MjM3ODI_26.jpg" width="200" height="270" src="static/picture/pic.png" alt="">
+                                                    </div>
+                                                    <div class="tcl-pic2"></div>
+                                                    <div class="tcl-pic3"></div>
+                                                    <p class="tcl-pic4">高清</p>
+                                                </a>
+                                            </div>
+
+                                            <div class="tcl-title">
+                                                <div class="movie-headline1"><a href="/shenqu/detail/53645.html" target="_blank" title="21608漫妮《真不是闹着玩》每晚八点">21608漫妮《真不是闹着玩》每晚八点</a></div>
+                                                <p>分类：<strong><a target='_self' href='/shenqu/list/21-1---0-0---.html' title="神曲" />神曲</a></strong></p>
+                                                <p>地区：<strong><a title='大陆' target='_blank' href='/search/results-area-%E5%A4%A7%E9%99%86.html'>大陆</a></strong></p>
+                                                <p>主演：<strong><a title='漫妮音乐sp' target='_blank' href='/search/results-starring-%E6%BC%AB%E5%A6%AE%E9%9F%B3%E4%B9%90sp.html'>漫妮音乐sp</a></strong></p>
+                                                <p>导演：<strong><a title='漫妮音乐sp' target='_blank' href='/search/results-directed-%E6%BC%AB%E5%A6%AE%E9%9F%B3%E4%B9%90sp.html'>漫妮音乐sp</a></strong></p>
+                                            </div>
+
+                                        </li>
+
+                                        <li class="h-100">
+                                            <div class="showPlay">
+                                                <a href="/shenqu/detail/53644.html" class="tcl-pic" target="_blank" title="卡洛里">
+                                                    <div class="tcl-pic1">
+                                                        <img class="scrollLoading" data-url="http://godsong.bs2dl.yy.com/djM2ZDA2ZDcxY2FmNWQ0YTc2N2VlMTE3NmExZDA1ZGE1MTkxODAzNDM0MzE_17.jpg" width="200" height="270" src="static/picture/pic.png" alt="">
+                                                    </div>
+                                                    <div class="tcl-pic2"></div>
+                                                    <div class="tcl-pic3"></div>
+                                                    <p class="tcl-pic4">高清</p>
+                                                </a>
+                                            </div>
+
+                                            <div class="tcl-title">
+                                                <div class="movie-headline1"><a href="/shenqu/detail/53644.html" target="_blank" title="卡洛里">卡洛里</a></div>
+                                                <p>分类：<strong><a target='_self' href='/shenqu/list/21-1---0-0---.html' title="神曲" />神曲</a></strong></p>
+                                                <p>地区：<strong><a title='大陆' target='_blank' href='/search/results-area-%E5%A4%A7%E9%99%86.html'>大陆</a></strong></p>
+                                                <p>主演：<strong><a title='171熊小小' target='_blank' href='/search/results-starring-171%E7%86%8A%E5%B0%8F%E5%B0%8F.html'>171熊小小</a></strong></p>
+                                                <p>导演：<strong><a title='171熊小小' target='_blank' href='/search/results-directed-171%E7%86%8A%E5%B0%8F%E5%B0%8F.html'>171熊小小</a></strong></p>
+                                            </div>
+
+                                        </li>
+
+                                        <li class="h-100">
+                                            <div class="showPlay">
+                                                <a href="/shenqu/detail/53643.html" class="tcl-pic" target="_blank" title="21608漫妮《拥抱着你的离去》">
+                                                    <div class="tcl-pic1">
+                                                        <img class="scrollLoading" data-url="http://godsong.bs2dl.yy.com/djJmZjkzYTI5ODgwYzNjMGQ2ZDhmMDM5ODk5ZDBkYzk2MTkxODU4MTc0NzU_21.jpg" width="200" height="270" src="static/picture/pic.png" alt="">
+                                                    </div>
+                                                    <div class="tcl-pic2"></div>
+                                                    <div class="tcl-pic3"></div>
+                                                    <p class="tcl-pic4">高清</p>
+                                                </a>
+                                            </div>
+
+                                            <div class="tcl-title">
+                                                <div class="movie-headline1"><a href="/shenqu/detail/53643.html" target="_blank" title="21608漫妮《拥抱着你的离去》">21608漫妮《拥抱着你的离去》</a></div>
+                                                <p>分类：<strong><a target='_self' href='/shenqu/list/21-1---0-0---.html' title="神曲" />神曲</a></strong></p>
+                                                <p>地区：<strong><a title='大陆' target='_blank' href='/search/results-area-%E5%A4%A7%E9%99%86.html'>大陆</a></strong></p>
+                                                <p>主演：<strong><a title='漫妮音乐sp' target='_blank' href='/search/results-starring-%E6%BC%AB%E5%A6%AE%E9%9F%B3%E4%B9%90sp.html'>漫妮音乐sp</a></strong></p>
+                                                <p>导演：<strong><a title='漫妮音乐sp' target='_blank' href='/search/results-directed-%E6%BC%AB%E5%A6%AE%E9%9F%B3%E4%B9%90sp.html'>漫妮音乐sp</a></strong></p>
+                                            </div>
+
+                                        </li>
+
+                                        <li class="h-100">
+                                            <div class="showPlay">
+                                                <a href="/shenqu/detail/53642.html" class="tcl-pic" target="_blank" title="没有你陪伴我真的好孤单-若蓝演唱">
+                                                    <div class="tcl-pic1">
+                                                        <img class="scrollLoading" data-url="http://godsong.bs2dl.yy.com/dmNhNmYzYzAxNmQ3YjM4MzI1ZmE0OWM0YWExOTA3MjgxMTkxODQ1Mzg0MjU_28.jpg" width="200" height="270" src="static/picture/pic.png" alt="">
+                                                    </div>
+                                                    <div class="tcl-pic2"></div>
+                                                    <div class="tcl-pic3"></div>
+                                                    <p class="tcl-pic4">高清</p>
+                                                </a>
+                                            </div>
+
+                                            <div class="tcl-title">
+                                                <div class="movie-headline1"><a href="/shenqu/detail/53642.html" target="_blank" title="没有你陪伴我真的好孤单-若蓝演唱">没有你陪伴我真的好孤单-若蓝演唱</a></div>
+                                                <p>分类：<strong><a target='_self' href='/shenqu/list/21-1---0-0---.html' title="神曲" />神曲</a></strong></p>
+                                                <p>地区：<strong><a title='大陆' target='_blank' href='/search/results-area-%E5%A4%A7%E9%99%86.html'>大陆</a></strong></p>
+                                                <p>主演：<strong><a title='面纱若蓝' target='_blank' href='/search/results-starring-%E9%9D%A2%E7%BA%B1%E8%8B%A5%E8%93%9D.html'>面纱若蓝</a></strong></p>
+                                                <p>导演：<strong><a title='面纱若蓝' target='_blank' href='/search/results-directed-%E9%9D%A2%E7%BA%B1%E8%8B%A5%E8%93%9D.html'>面纱若蓝</a></strong></p>
+                                            </div>
+
+                                        </li>
+
+                                        <li class="h-100">
+                                            <div class="showPlay">
+                                                <a href="/shenqu/detail/53641.html" class="tcl-pic" target="_blank" title="freaky">
+                                                    <div class="tcl-pic1">
+                                                        <img class="scrollLoading" data-url="http:////godsong.bs2dl.yy.com/djJmZjkzYTI5ODgwYzNjMGQ2ZDhmMDM5ODk5ZDBkYzk2MTkxODU3MjcyNDE_20.jpg" width="200" height="270" src="static/picture/pic.png" alt="">
+                                                    </div>
+                                                    <div class="tcl-pic2"></div>
+                                                    <div class="tcl-pic3"></div>
+                                                    <p class="tcl-pic4">高清</p>
+                                                </a>
+                                            </div>
+
+                                            <div class="tcl-title">
+                                                <div class="movie-headline1"><a href="/shenqu/detail/53641.html" target="_blank" title="freaky">freaky</a></div>
+                                                <p>分类：<strong><a target='_self' href='/shenqu/list/21-1---0-0---.html' title="神曲" />神曲</a></strong></p>
+                                                <p>地区：<strong><a title='大陆' target='_blank' href='/search/results-area-%E5%A4%A7%E9%99%86.html'>大陆</a></strong></p>
+                                                <p>主演：<strong><a title='奕小含' target='_blank' href='/search/results-starring-%E5%A5%95%E5%B0%8F%E5%90%AB.html'>奕小含</a></strong></p>
+                                                <p>导演：<strong><a title='奕小含' target='_blank' href='/search/results-directed-%E5%A5%95%E5%B0%8F%E5%90%AB.html'>奕小含</a></strong></p>
+                                            </div>
+
+                                        </li>
+
+                                        <li class="h-100">
+                                            <div class="showPlay">
+                                                <a href="/shenqu/detail/53640.html" class="tcl-pic" target="_blank" title="21608漫妮《女儿情》每晚八点">
+                                                    <div class="tcl-pic1">
+                                                        <img class="scrollLoading" data-url="http://godsong.bs2dl.yy.com/dmNhNmYzYzAxNmQ3YjM4MzI1ZmE0OWM0YWExOTA3MjgxMTkxODQ1MzgyOTE_26.jpg" width="200" height="270" src="static/picture/pic.png" alt="">
+                                                    </div>
+                                                    <div class="tcl-pic2"></div>
+                                                    <div class="tcl-pic3"></div>
+                                                    <p class="tcl-pic4">高清</p>
+                                                </a>
+                                            </div>
+
+                                            <div class="tcl-title">
+                                                <div class="movie-headline1"><a href="/shenqu/detail/53640.html" target="_blank" title="21608漫妮《女儿情》每晚八点">21608漫妮《女儿情》每晚八点</a></div>
+                                                <p>分类：<strong><a target='_self' href='/shenqu/list/21-1---0-0---.html' title="神曲" />神曲</a></strong></p>
+                                                <p>地区：<strong><a title='大陆' target='_blank' href='/search/results-area-%E5%A4%A7%E9%99%86.html'>大陆</a></strong></p>
+                                                <p>主演：<strong><a title='漫妮音乐sp' target='_blank' href='/search/results-starring-%E6%BC%AB%E5%A6%AE%E9%9F%B3%E4%B9%90sp.html'>漫妮音乐sp</a></strong></p>
+                                                <p>导演：<strong><a title='漫妮音乐sp' target='_blank' href='/search/results-directed-%E6%BC%AB%E5%A6%AE%E9%9F%B3%E4%B9%90sp.html'>漫妮音乐sp</a></strong></p>
+                                            </div>
+
+                                        </li>
+
+                                        <li class="h-100">
+                                            <div class="showPlay">
+                                                <a href="/shenqu/detail/53639.html" class="tcl-pic" target="_blank" title="21608漫妮《碎心石》每晚八点">
+                                                    <div class="tcl-pic1">
+                                                        <img class="scrollLoading" data-url="http://godsong.bs2dl.yy.com/djJmZjkzYTI5ODgwYzNjMGQ2ZDhmMDM5ODk5ZDBkYzk2MTkxODU4MTc0NzE_24.jpg" width="200" height="270" src="static/picture/pic.png" alt="">
+                                                    </div>
+                                                    <div class="tcl-pic2"></div>
+                                                    <div class="tcl-pic3"></div>
+                                                    <p class="tcl-pic4">高清</p>
+                                                </a>
+                                            </div>
+
+                                            <div class="tcl-title">
+                                                <div class="movie-headline1"><a href="/shenqu/detail/53639.html" target="_blank" title="21608漫妮《碎心石》每晚八点">21608漫妮《碎心石》每晚八点</a></div>
+                                                <p>分类：<strong><a target='_self' href='/shenqu/list/21-1---0-0---.html' title="神曲" />神曲</a></strong></p>
+                                                <p>地区：<strong><a title='大陆' target='_blank' href='/search/results-area-%E5%A4%A7%E9%99%86.html'>大陆</a></strong></p>
+                                                <p>主演：<strong><a title='漫妮音乐sp' target='_blank' href='/search/results-starring-%E6%BC%AB%E5%A6%AE%E9%9F%B3%E4%B9%90sp.html'>漫妮音乐sp</a></strong></p>
+                                                <p>导演：<strong><a title='漫妮音乐sp' target='_blank' href='/search/results-directed-%E6%BC%AB%E5%A6%AE%E9%9F%B3%E4%B9%90sp.html'>漫妮音乐sp</a></strong></p>
+                                            </div>
+
+                                        </li>
+
+                                        <li class="h-100">
+                                            <div class="showPlay">
+                                                <a href="/shenqu/detail/53638.html" class="tcl-pic" target="_blank" title="初恋">
+                                                    <div class="tcl-pic1">
+                                                        <img class="scrollLoading" data-url="http:////godsong.bs2dl.yy.com/djdmMjU2YTI5Mzg3ZTUzMTNiN2E3YWFjNjRkYzk3NmY3MTkxODc0NzY4MTM_17.jpg" width="200" height="270" src="static/picture/pic.png" alt="">
+                                                    </div>
+                                                    <div class="tcl-pic2"></div>
+                                                    <div class="tcl-pic3"></div>
+                                                    <p class="tcl-pic4">高清</p>
+                                                </a>
+                                            </div>
+
+                                            <div class="tcl-title">
+                                                <div class="movie-headline1"><a href="/shenqu/detail/53638.html" target="_blank" title="初恋">初恋</a></div>
+                                                <p>分类：<strong><a target='_self' href='/shenqu/list/21-1---0-0---.html' title="神曲" />神曲</a></strong></p>
+                                                <p>地区：<strong><a title='大陆' target='_blank' href='/search/results-area-%E5%A4%A7%E9%99%86.html'>大陆</a></strong></p>
+                                                <p>主演：<strong><a title='热舞小白妖' target='_blank' href='/search/results-starring-%E7%83%AD%E8%88%9E%E5%B0%8F%E7%99%BD%E5%A6%96.html'>热舞小白妖</a></strong></p>
+                                                <p>导演：<strong><a title='热舞小白妖' target='_blank' href='/search/results-directed-%E7%83%AD%E8%88%9E%E5%B0%8F%E7%99%BD%E5%A6%96.html'>热舞小白妖</a></strong></p>
+                                            </div>
+
+                                        </li>
+
+                                        <li class="h-100">
+                                            <div class="showPlay">
+                                                <a href="/shenqu/detail/53637.html" class="tcl-pic" target="_blank" title="离人殇">
+                                                    <div class="tcl-pic1">
+                                                        <img class="scrollLoading" data-url="http://godsong.bs2dl.yy.com/dmNhNmYzYzAxNmQ3YjM4MzI1ZmE0OWM0YWExOTA3MjgxMTkxODQ1NDAzOTY_20.jpg" width="200" height="270" src="static/picture/pic.png" alt="">
+                                                    </div>
+                                                    <div class="tcl-pic2"></div>
+                                                    <div class="tcl-pic3"></div>
+                                                    <p class="tcl-pic4">高清</p>
+                                                </a>
+                                            </div>
+
+                                            <div class="tcl-title">
+                                                <div class="movie-headline1"><a href="/shenqu/detail/53637.html" target="_blank" title="离人殇">离人殇</a></div>
+                                                <p>分类：<strong><a target='_self' href='/shenqu/list/21-1---0-0---.html' title="神曲" />神曲</a></strong></p>
+                                                <p>地区：<strong><a title='大陆' target='_blank' href='/search/results-area-%E5%A4%A7%E9%99%86.html'>大陆</a></strong></p>
+                                                <p>主演：<strong><a title='小雨' target='_blank' href='/search/results-starring-%E5%B0%8F%E9%9B%A8.html'>小雨</a></strong></p>
+                                                <p>导演：<strong><a title='小雨' target='_blank' href='/search/results-directed-%E5%B0%8F%E9%9B%A8.html'>小雨</a></strong></p>
+                                            </div>
+
+                                        </li>
+
+                                        <li class="h-100">
+                                            <div class="showPlay">
+                                                <a href="/shenqu/detail/53636.html" class="tcl-pic" target="_blank" title="一生所爱">
+                                                    <div class="tcl-pic1">
+                                                        <img class="scrollLoading" data-url="http:////godsong.bs2dl.yy.com/djY2ODY3NDAyMTMyZDA3ZThjMTYxOTM0MWM0ODc2MTM2MTkxODE0NzQwOTA_25.jpg" width="200" height="270" src="static/picture/pic.png" alt="">
+                                                    </div>
+                                                    <div class="tcl-pic2"></div>
+                                                    <div class="tcl-pic3"></div>
+                                                    <p class="tcl-pic4">高清</p>
+                                                </a>
+                                            </div>
+
+                                            <div class="tcl-title">
+                                                <div class="movie-headline1"><a href="/shenqu/detail/53636.html" target="_blank" title="一生所爱">一生所爱</a></div>
+                                                <p>分类：<strong><a target='_self' href='/shenqu/list/21-1---0-0---.html' title="神曲" />神曲</a></strong></p>
+                                                <p>地区：<strong><a title='大陆' target='_blank' href='/search/results-area-%E5%A4%A7%E9%99%86.html'>大陆</a></strong></p>
+                                                <p>主演：<strong><a title='笙儿' target='_blank' href='/search/results-starring-%E7%AC%99%E5%84%BF.html'>笙儿</a></strong></p>
+                                                <p>导演：<strong><a title='笙儿' target='_blank' href='/search/results-directed-%E7%AC%99%E5%84%BF.html'>笙儿</a></strong></p>
+                                            </div>
+
+                                        </li>
+
+                                        <li class="h-100">
+                                            <div class="showPlay">
+                                                <a href="/shenqu/detail/53635.html" class="tcl-pic" target="_blank" title="岁月神偷">
+                                                    <div class="tcl-pic1">
+                                                        <img class="scrollLoading" data-url="http://godsong.bs2dl.yy.com/djY2ODY3NDAyMTMyZDA3ZThjMTYxOTM0MWM0ODc2MTM2MTkxODE1MzgxMzM_24.jpg" width="200" height="270" src="static/picture/pic.png" alt="">
+                                                    </div>
+                                                    <div class="tcl-pic2"></div>
+                                                    <div class="tcl-pic3"></div>
+                                                    <p class="tcl-pic4">高清</p>
+                                                </a>
+                                            </div>
+
+                                            <div class="tcl-title">
+                                                <div class="movie-headline1"><a href="/shenqu/detail/53635.html" target="_blank" title="岁月神偷">岁月神偷</a></div>
+                                                <p>分类：<strong><a target='_self' href='/shenqu/list/21-1---0-0---.html' title="神曲" />神曲</a></strong></p>
+                                                <p>地区：<strong><a title='大陆' target='_blank' href='/search/results-area-%E5%A4%A7%E9%99%86.html'>大陆</a></strong></p>
+                                                <p>主演：<strong><a title='小诗妹' target='_blank' href='/search/results-starring-%E5%B0%8F%E8%AF%97%E5%A6%B9.html'>小诗妹</a></strong></p>
+                                                <p>导演：<strong><a title='小诗妹' target='_blank' href='/search/results-directed-%E5%B0%8F%E8%AF%97%E5%A6%B9.html'>小诗妹</a></strong></p>
+                                            </div>
+
+                                        </li>
+
+                                        <li class="h-100">
+                                            <div class="showPlay">
+                                                <a href="/shenqu/detail/53634.html" class="tcl-pic" target="_blank" title="jam jam">
+                                                    <div class="tcl-pic1">
+                                                        <img class="scrollLoading" data-url="http:////godsong.bs2dl.yy.com/djJmZjkzYTI5ODgwYzNjMGQ2ZDhmMDM5ODk5ZDBkYzk2MTkxODU3ODYxNTM_22.jpg" width="200" height="270" src="static/picture/pic.png" alt="">
+                                                    </div>
+                                                    <div class="tcl-pic2"></div>
+                                                    <div class="tcl-pic3"></div>
+                                                    <p class="tcl-pic4">高清</p>
+                                                </a>
+                                            </div>
+
+                                            <div class="tcl-title">
+                                                <div class="movie-headline1"><a href="/shenqu/detail/53634.html" target="_blank" title="jam jam">jam jam</a></div>
+                                                <p>分类：<strong><a target='_self' href='/shenqu/list/21-1---0-0---.html' title="神曲" />神曲</a></strong></p>
+                                                <p>地区：<strong><a title='大陆' target='_blank' href='/search/results-area-%E5%A4%A7%E9%99%86.html'>大陆</a></strong></p>
+                                                <p>主演：<strong><a title='懒懒' target='_blank' href='/search/results-starring-%E6%87%92%E6%87%92.html'>懒懒</a></strong></p>
+                                                <p>导演：<strong><a title='懒懒' target='_blank' href='/search/results-directed-%E6%87%92%E6%87%92.html'>懒懒</a></strong></p>
+                                            </div>
+
+                                        </li>
+
+                                        <li class="h-100">
+                                            <div class="showPlay">
+                                                <a href="/shenqu/detail/53633.html" class="tcl-pic" target="_blank" title="雨落长安">
+                                                    <div class="tcl-pic1">
+                                                        <img class="scrollLoading" data-url="http:////godsong.bs2dl.yy.com/djM2ZDA2ZDcxY2FmNWQ0YTc2N2VlMTE3NmExZDA1ZGE1MTkxODAzMDQwNzk_21.jpg" width="200" height="270" src="static/picture/pic.png" alt="">
+                                                    </div>
+                                                    <div class="tcl-pic2"></div>
+                                                    <div class="tcl-pic3"></div>
+                                                    <p class="tcl-pic4">高清</p>
+                                                </a>
+                                            </div>
+
+                                            <div class="tcl-title">
+                                                <div class="movie-headline1"><a href="/shenqu/detail/53633.html" target="_blank" title="雨落长安">雨落长安</a></div>
+                                                <p>分类：<strong><a target='_self' href='/shenqu/list/21-1---0-0---.html' title="神曲" />神曲</a></strong></p>
+                                                <p>地区：<strong><a title='大陆' target='_blank' href='/search/results-area-%E5%A4%A7%E9%99%86.html'>大陆</a></strong></p>
+                                                <p>主演：<strong><a title='951尹姑娘' target='_blank' href='/search/results-starring-951%E5%B0%B9%E5%A7%91%E5%A8%98.html'>951尹姑娘</a></strong></p>
+                                                <p>导演：<strong><a title='951尹姑娘' target='_blank' href='/search/results-directed-951%E5%B0%B9%E5%A7%91%E5%A8%98.html'>951尹姑娘</a></strong></p>
+                                            </div>
+
+                                        </li>
+
+                                        <li class="h-100">
+                                            <div class="showPlay">
+                                                <a href="/shenqu/detail/53632.html" class="tcl-pic" target="_blank" title="性感韩舞">
+                                                    <div class="tcl-pic1">
+                                                        <img class="scrollLoading" data-url="http:////godsong.bs2dl.yy.com/djA2MTcxMjI0NGExN2I2MmUyMTZkYjQyNTljM2I1MjQ0MTkxODMzNDU0MDA_8.jpg" width="200" height="270" src="static/picture/pic.png" alt="">
+                                                    </div>
+                                                    <div class="tcl-pic2"></div>
+                                                    <div class="tcl-pic3"></div>
+                                                    <p class="tcl-pic4">高清</p>
+                                                </a>
+                                            </div>
+
+                                            <div class="tcl-title">
+                                                <div class="movie-headline1"><a href="/shenqu/detail/53632.html" target="_blank" title="性感韩舞">性感韩舞</a></div>
+                                                <p>分类：<strong><a target='_self' href='/shenqu/list/21-1---0-0---.html' title="神曲" />神曲</a></strong></p>
+                                                <p>地区：<strong><a title='大陆' target='_blank' href='/search/results-area-%E5%A4%A7%E9%99%86.html'>大陆</a></strong></p>
+                                                <p>主演：<strong><a title='孝惠' target='_blank' href='/search/results-starring-%E5%AD%9D%E6%83%A0.html'>孝惠</a></strong></p>
+                                                <p>导演：<strong><a title='孝惠' target='_blank' href='/search/results-directed-%E5%AD%9D%E6%83%A0.html'>孝惠</a></strong></p>
+                                            </div>
+
+                                        </li>
+
+                                        <li class="h-100">
+                                            <div class="showPlay">
+                                                <a href="/shenqu/detail/53631.html" class="tcl-pic" target="_blank" title="27793梦幻 泪满天DJ 舞蹈">
+                                                    <div class="tcl-pic1">
+                                                        <img class="scrollLoading" data-url="http:////godsong.bs2dl.yy.com/djJmZjkzYTI5ODgwYzNjMGQ2ZDhmMDM5ODk5ZDBkYzk2MTkxODU4MjE5Njc_29.jpg" width="200" height="270" src="static/picture/pic.png" alt="">
+                                                    </div>
+                                                    <div class="tcl-pic2"></div>
+                                                    <div class="tcl-pic3"></div>
+                                                    <p class="tcl-pic4">高清</p>
+                                                </a>
+                                            </div>
+
+                                            <div class="tcl-title">
+                                                <div class="movie-headline1"><a href="/shenqu/detail/53631.html" target="_blank" title="27793梦幻 泪满天DJ 舞蹈">27793梦幻 泪满天DJ 舞蹈</a></div>
+                                                <p>分类：<strong><a target='_self' href='/shenqu/list/21-1---0-0---.html' title="神曲" />神曲</a></strong></p>
+                                                <p>地区：<strong><a title='大陆' target='_blank' href='/search/results-area-%E5%A4%A7%E9%99%86.html'>大陆</a></strong></p>
+                                                <p>主演：<strong><a title='迷情梦幻' target='_blank' href='/search/results-starring-%E8%BF%B7%E6%83%85%E6%A2%A6%E5%B9%BB.html'>迷情梦幻</a></strong></p>
+                                                <p>导演：<strong><a title='迷情梦幻' target='_blank' href='/search/results-directed-%E8%BF%B7%E6%83%85%E6%A2%A6%E5%B9%BB.html'>迷情梦幻</a></strong></p>
+                                            </div>
+
+                                        </li>
+
+                                        <li class="h-100">
+                                            <div class="showPlay">
+                                                <a href="Movie.htmldetail/53629.html" class="tcl-pic" target="_blank" title="中二少女">
+                                                    <div class="tcl-pic1">
+                                                        <img class="scrollLoading" data-url="http://imgwx1.2345.com/dypcimg/img/e/66/sup199684_223x310.jpg" width="200" height="270" src="static/picture/pic.png" alt="">
+                                                    </div>
+                                                    <div class="tcl-pic2"></div>
+                                                    <div class="tcl-pic3"></div>
+                                                    <p class="tcl-pic4">正片</p>
+                                                </a>
+                                            </div>
+
+                                            <div class="tcl-title">
+                                                <div class="movie-headline1"><a href="Movie.htmldetail/53629.html" target="_blank" title="中二少女">中二少女</a></div>
+                                                <p>分类：<strong><a target='_self' href='Movie.htmllist/6-1---0-0---.html' title="喜剧片" />喜剧片</a></strong></p>
+                                                <p>地区：<strong><a title='大陆' target='_blank' href='/search/results-area-%E5%A4%A7%E9%99%86.html'>大陆</a></strong></p>
+                                                <p>主演：<strong><a title='刘安琪（演员）' target='_blank' href='/search/results-starring-%E5%88%98%E5%AE%89%E7%90%AA%EF%BC%88%E6%BC%94%E5%91%98%EF%BC%89.html'>刘安琪（演员）</a></strong></p>
+                                                <p>导演：<strong><a title='张飞鸿' target='_blank' href='/search/results-directed-%E5%BC%A0%E9%A3%9E%E9%B8%BF.html'>张飞鸿</a></strong></p>
+                                            </div>
+
+                                        </li>
+
+                                        <li class="h-100">
+                                            <div class="showPlay">
+                                                <a href="Movie.htmldetail/53630.html" class="tcl-pic" target="_blank" title="蜀山降魔传">
+                                                    <div class="tcl-pic1">
+                                                        <img class="scrollLoading" data-url="http://imgwx3.2345.com/dypcimg/img/6/66/sup199693_223x310.jpg" width="200" height="270" src="static/picture/pic.png" alt="">
+                                                    </div>
+                                                    <div class="tcl-pic2"></div>
+                                                    <div class="tcl-pic3"></div>
+                                                    <p class="tcl-pic4">正片</p>
+                                                </a>
+                                            </div>
+
+                                            <div class="tcl-title">
+                                                <div class="movie-headline1"><a href="Movie.htmldetail/53630.html" target="_blank" title="蜀山降魔传">蜀山降魔传</a></div>
+                                                <p>分类：<strong><a target='_self' href='Movie.htmllist/5-1---0-0---.html' title="动作片" />动作片</a></strong></p>
+                                                <p>地区：<strong><a title='大陆' target='_blank' href='/search/results-area-%E5%A4%A7%E9%99%86.html'>大陆</a></strong></p>
+                                                <p>主演：<strong><a title='吴卓羲' target='_blank' href='/search/results-starring-%E5%90%B4%E5%8D%93%E7%BE%B2.html'>吴卓羲</a></strong><strong><a title='李熹子' target='_blank' href='/search/results-starring-%E6%9D%8E%E7%86%B9%E5%AD%90.html'>李熹子</a></strong></p>
+                                                <p>导演：<strong><a title='朱凌锋' target='_blank' href='/search/results-directed-%E6%9C%B1%E5%87%8C%E9%94%8B.html'>朱凌锋</a></strong></p>
+                                            </div>
+
+                                        </li>
+
+                                        <li class="h-100">
+                                            <div class="showPlay">
+                                                <a href="Movie.htmldetail/53628.html" class="tcl-pic" target="_blank" title="暴走杀手">
+                                                    <div class="tcl-pic1">
+                                                        <img class="scrollLoading" data-url="http://imgwx3.2345.com/dypcimg/img/a/66/sup199683_223x310.jpg" width="200" height="270" src="static/picture/pic.png" alt="">
+                                                    </div>
+                                                    <div class="tcl-pic2"></div>
+                                                    <div class="tcl-pic3"></div>
+                                                    <p class="tcl-pic4">正片</p>
+                                                </a>
+                                            </div>
+
+                                            <div class="tcl-title">
+                                                <div class="movie-headline1"><a href="Movie.htmldetail/53628.html" target="_blank" title="暴走杀手">暴走杀手</a></div>
+                                                <p>分类：<strong><a target='_self' href='Movie.htmllist/5-1---0-0---.html' title="动作片" />动作片</a></strong></p>
+                                                <p>地区：<strong><a title='大陆' target='_blank' href='/search/results-area-%E5%A4%A7%E9%99%86.html'>大陆</a></strong></p>
+                                                <p>主演：<strong><a title='赵煊' target='_blank' href='/search/results-starring-%E8%B5%B5%E7%85%8A.html'>赵煊</a></strong><strong><a title='董麟' target='_blank' href='/search/results-starring-%E8%91%A3%E9%BA%9F.html'>董麟</a></strong></p>
+                                                <p>导演：<strong><a title='董浩翔' target='_blank' href='/search/results-directed-%E8%91%A3%E6%B5%A9%E7%BF%94.html'>董浩翔</a></strong></p>
+                                            </div>
+
+                                        </li>
+
+                                    </ul>-->
+                                </div>
+                                <!--teleplay-content-inner-->
+                            </div>
+                            <!--teleplay-content-->
+                        </div>
+                        <!--teleplay-left-->
+                    </div>
+                    <!--teleplay-->
+                </div>
+                <!--con2-->
+                <!--分页开始-->
+                <div class="ui-pages" id="aapages"><strong>共36433条数据&nbsp;当前:1/911页&nbsp;</strong><em class="prev">首页</em>&nbsp;<em class="prev">上一页</em>&nbsp;<span class="current">1</span>&nbsp;<a target="_self" class="pagelink_b" href="/-pg-2.html">2</a>&nbsp;<a target="_self" class="pagelink_b" href="/-pg-3.html">3</a>&nbsp;<a target="_self" class="pagelink_b" href="/-pg-4.html">4</a>&nbsp;<a target="_self" class="pagelink_b" href="/-pg-5.html">5</a>&nbsp;<a target="_self" class="pagelink_b" href="/-pg-6.html">6</a>&nbsp;<a target="_self" href="/-pg-2.html" class="next pagegbk">下一页</a>&nbsp;<a target="_self" href="/-pg-911.html" class="next pagegbk">尾页</a> </div>
+                <!--分页结束-->
+            </div>
+            <!--container-inner-->
+        </div>
+        <!--container-->
+        <div class="zt-footer" id="zt-footer">
+            <div class="zt-footer-inner" id="zt-footer-inner">
+                <ul class="zt-footer-about zt-fl about-other-1">
+                    本站所有视频均来自互联网，版权归原创者所有，如果侵犯了您的权益，请通知我们【邮箱：<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="a497959d949d94979491e4d5d58ac7cbc9">[email&#160;protected]</a>】，我们会及时删除侵权内容，谢谢！<br>
+                    Copyright © 2016-2017 <a href="/" title="伐木累影院">伐木累影院</a> - <a  href="/about/map-pg-1.html" title="网站地图">网站地图</a> - <a href="/baidu.xml" title="百度地图">百度地图</a> - <a href="/rss.xml" title="RSS订阅">RSS订阅</a>
+                </ul>
+            </div>
+            <div class="dis-100">
+                <script data-cfasync="false" src="static/js/email-decode.min.js"></script>
+                <script type="text/javascript" src='static/js/tongji.js'></script>
+            </div>
+        </div>
+    </div>
+    <!--movie-wrap-->
+    <script type="text/javascript">
+        //判断是否为VIP
+        function isvip(a) {
+            if (a == "1") {
+                alert("您还是不是VIP")
+            }
+            if (a == "2") {
+                window.open("bofangxiangqing.html");
+            }
+
+        }
+        
+       
+        //页面加载函数
+        $(function () {
+            select(url);
+            qwert1();
+            qwww();
+        })
+        //用户的所有资料
+        function qwww() {
+            $.ajax({
+                url: 'adminH/MoviesH.ashx',
+                type: 'get',
+                data: { 'flag': 5 },
+                success: function (r) {
+                    console.log(r);
+                    if (r != "123") {
+
+                        $.each(r, function (index, item) {
+                            var UserNumber = item.UserNumber;
+                            username1(UserNumber);
+                        })
+                    }
+
+                }
+            })
+        }
+        //赋值给lab 控件
+        function username1(a) {
+            qwert();
+            var lber = document.getElementById("q2");
+
+
+
+            lber.value = a;
+
+        }
+        //属性值可见
+        function qwert() {
+
+            var lber1 = document.getElementById("q1");
+            lber1.style.visibility = "visible";
+            var lber = document.getElementById("q2");
+            lber.style.visibility = "visible";
+            lber.style.backgroundColor = "white";
+            lber.style.border = "none";
+            var lber2 = document.getElementById("q3");
+            lber2.style.display = "block";
+            var denglu = document.getElementById("denglu");
+            denglu.style.visibility = "hidden";
+
+        }
+        //属性值不可见
+        function qwert1() {
+
+            var lber1 = document.getElementById("q1");
+            lber1.style.visibility = "hidden";
+            var lber = document.getElementById("q2");
+            lber.style.visibility = "hidden";
+            var lber2 = document.getElementById("q3");
+            lber2.style.display = "none";
+        }
+        //获取选中视频的编号——往播放详情页面传值
+        function set(c) {
+
+
+
+            var url = 'bofangxiangqing.html' + '?tiaojian=' + escape(c);
+            window.open(url);
+        }
+        //接受传过来的值
+        function select(url) {
+            var url = location.search,
+                obj = {};
+            console.info(url);
+            if (url.indexOf("?") != -1) {
+                var str = url.substr(1);
+                strs = str.split("&");
+                for (var i = 0; i < strs.length; i++) {
+                    obj[strs[i].split("=")[0]] = unescape(strs[i].split("=")[1]);
+                }
+                
+            }
+
+            console.log('传过来的参数是:', obj.tiaojian);
+
+
+
+            $.ajax({
+                
+                url: 'selecttiaojian.ashx',
+                type: 'get',
+                data: { 'a': obj.tiaojian },
+                success: function (r) {
+                    $.each(r, function (index, item) {
+                        var MovieNAME = item.MovieNAME;
+                        var MovieStarring = item.MovieStarring;
+                        var AreaName = item.AreaName;
+                        var MovieImg = item.MovieImg;
+                        var MovieTypeNAME = item.MovieTypeNAME;
+                        var VIPname = item.VIPname;
+                        var MovieID = item.MovieID;
+                        var MoviePrice = item.MoviePrice;
+                        //var IsVIP = item.IsVIP;
+                        $("#myul").append(' <li class="h-100"><div class="showPlay"><a onclick="set(' + MovieID + ')"  class="tcl-pic" target="_blank" title="' + MovieNAME + '"><div class="tcl-pic1"><img class="scrollLoading"  width="200" height="270" src="' + MovieImg + '" alt=""></div><div class="tcl-pic2"></div><div class="tcl-pic3"></div><p class="tcl-pic4">正片</p></a></div><div class="tcl-title"><div class="movie-headline1"><a href="/dianying/detail/53667.html" target="_blank" title="' + MovieNAME + '">' + MovieNAME + '</a></div><p>分类：<strong><a target="_self" href="/dianying/list/6-1---0-0---.html" title="' + MovieTypeNAME + '" />' + MovieTypeNAME + '</a></strong></p><p>地区：<strong><a title="大陆" target="_blank" href="/search/results-area-%E5%A4%A7%E9%99%86.html">' + AreaName + '</a></strong></p><p>主演：<strong><a title="王宥钧" target="_blank" href="/search/results-starring-%E7%8E%8B%E5%AE%A5%E9%92%A7.html">' + MovieStarring + '</a></strong></p><p>价格：<strong><a target="_self" href="/dianying/list/7-1---0-0---.html" title="' + MoviePrice + '" />' + MoviePrice + '</a></strong></p></div></li>');
+
+                        
+                    })
+                }
+            })
+        }
+
+    </script>
+</body>
+</html>

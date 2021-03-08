@@ -1,0 +1,15 @@
+D:\学习\第二项目\WebApplication2\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+D:\学习\第二项目\WebApplication2\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+D:\学习\第二项目\WebApplication2\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+D:\学习\第二项目\WebApplication2\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
+C:\Users\admin\Desktop\第二项目\WebApplication2\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+C:\Users\admin\Desktop\第二项目\WebApplication2\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+C:\Users\admin\Desktop\第二项目\WebApplication2\ClassLibrary1\obj\Debug\ClassLibrary1.csprojResolveAssemblyReference.cache
+C:\Users\admin\Desktop\第二项目\WebApplication2\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+C:\Users\admin\Desktop\第二项目\WebApplication2\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
+D:\学习\第二项目\WebApplication2\ClassLibrary1\obj\Debug\ClassLibrary1.csprojResolveAssemblyReference.cache
+C:\Users\个人专用文件夹\第二项目\WebApplication2\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+C:\Users\个人专用文件夹\第二项目\WebApplication2\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+C:\Users\个人专用文件夹\第二项目\WebApplication2\ClassLibrary1\obj\Debug\ClassLibrary1.csproj.CoreCompileInputs.cache
+C:\Users\个人专用文件夹\第二项目\WebApplication2\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+C:\Users\个人专用文件夹\第二项目\WebApplication2\ClassLibrary1\obj\Debug\ClassLibrary1.pdb

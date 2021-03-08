@@ -1,0 +1,1470 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>伐木累影院-伐木累电影院-yy伐木累影院-6029伐木累影院</title>
+    <meta name="keywords" content="伐木累影院,伐木累电影院,yy伐木累影院,6029伐木累影院,3198伐木累影院" />
+    <meta name="description" content="伐木累影院提供2017年最新电影、电视剧、综艺及动漫在线观看，以最新、最好看、最清晰为宗旨，第一时间分享热门影视资源，看最新电影，在伐木累影院。" />
+    <link rel="stylesheet" href="static/css/style.css" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <script>var mv_info = false;</script>
+    <script type="text/javascript" src="static/js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="static/js/common_zt.js" charset="utf-8"></script>
+    <script type="text/javascript" src="static/js/jquery.jscrollpane.min.js"></script>
+    <script type="text/javascript" src="static/js/jquery.mousewheel.js"></script>
+    <script type="text/javascript" src="static/js/init.js"></script>
+    <!--[if lte IE 6]> 
+<script src="static/js/dd_belatedpng_0.0.8a.min.js" type="text/javascript"></script> 
+<script type="text/javascript"> 
+DD_belatedPNG.fix('.search-text,.watch-box,.watch-list-triangle,.watch-list-ul li i,.search-list-ul li i,.advance-notice-top h3,.program-top i,.more-list-btn i,.go-share-btn,.dcb-episodes-list li a,.anew-filtrate i,.coming-soon i,.logo a,.more-list-box,.watch-icon,.watch-icon2,.search-null-left,.star-search-text,.search-text2,.cartoon-ul li img');
+</script>
+<![endif]-->
+    <script>var SitePath = '/', SiteAid = '10', SiteTid = '', SiteId = '';</script>
+    <script type="text/javascript" src="static/js/home.js"></script>
+    <script src="static/js/jquery.lazyload.js"></script>
+    <script src="static/js/jquery.autocomplete.js"></script>
+    <script type="text/javascript" src="static/js/phone.js"></script>
+    <script type="text/javascript" src="static/js/other.js"></script>
+    <!--<script src="jquery.min.js"></script>-->
+
+    <!--//样式开始-->
+    <link href="static2/css/style.css" rel="stylesheet">
+    <link href="static2/css/css3style.css" rel="stylesheet">
+
+    <script type="text/javascript">
+        //页面初始化加载方法
+        $(function () {
+            setTimeout(myfunction, 100)
+            //myfunction();//数据库的7个视频
+            console.warn("一次")
+
+            setTimeout(myfunction12, 1000);
+            //myfunction12();//电影大全
+            console.warn("二次")
+            setTimeout(myfunction13, 2000);
+            //myfunction13();//电视剧大全dongmandaquan
+            setTimeout(zongyidaquan, 2500);
+            setTimeout(dongmandaquan, 3000);
+            console.warn("三次")
+            qwert1();//属性值不可见
+            qwww();//用户信息
+            qwe();
+        });
+        //$(function () {
+        //    setTimeout(myfunction, 100)
+        //    //myfunction();//数据库的7个视频
+        //    console.warn("一次")
+
+        //    setTimeout(myfunction12, 0);
+        //    //myfunction12();//电影大全
+        //    console.warn("二次")
+        //    setTimeout(myfunction13, 2000);
+        //    //myfunction13();//电视剧大全
+        //    console.warn("三次")
+        //    qwert1();//属性值不可见
+        //    qwww();//用户信息
+
+        //});
+        //接受登录的用户账号
+
+        //function qwe(url) {
+
+        //    var url = location.search,
+        //        obj = {};
+        //    console.info(url);
+        //    if (url.indexOf("?") != -1) {
+        //        var str = url.substr(1);
+        //        strs = str.split("&");
+        //        for (var i = 0; i < strs.length; i++) {
+        //            obj[strs[i].split("=")[0]] = unescape(strs[i].split("=")[1]);
+        //        }
+
+        //    }
+
+        //    console.log('传过来的参数是:', obj.username);
+        //    if (obj.username != undefined) {
+        //        username1(obj.username);
+        //    }
+
+        //}
+
+        //用户的所有资料
+        function qwww() {
+
+            //alert("欢迎来到伐木累影院！")
+            $.ajax({
+                url: 'adminH/MoviesH.ashx',
+                type: 'get',
+                data: { 'flag': 5 },
+                success: function (r) {
+                    console.log(r);
+                    if (r != "123") {
+
+                        $.each(r, function (index, item) {
+                            var UserNumber = item.UserNumber;
+                            username1(UserNumber);
+                        })
+                    } else {
+
+                    }
+
+                }
+            })
+        }
+        //赋值给lab 控件
+        function username1(a) {
+            qwert();
+            var lber = document.getElementById("q2");
+
+
+
+            lber.value = a;
+
+        }
+        //属性值可见
+        function qwert() {
+
+            var lber1 = document.getElementById("q1");
+            lber1.style.visibility = "visible";
+            var lber = document.getElementById("q2");
+            lber.style.visibility = "visible";
+            lber.style.backgroundColor = "white";
+            lber.style.border = "none";
+            var lber2 = document.getElementById("q3");
+            lber2.style.display = "block";
+            var denglu = document.getElementById("denglu");
+            denglu.style.visibility = "hidden";
+
+        }
+        //属性值不可见
+        function qwert1() {
+
+            var lber1 = document.getElementById("q1");
+            lber1.style.visibility = "hidden";
+            var lber = document.getElementById("q2");
+            lber.style.visibility = "hidden";
+            var lber2 = document.getElementById("q3");
+            lber2.style.display = "none";
+        }
+        //往搜索页面传值
+        function select() {
+            var q = $("#wd").val();
+            var url = 'search.html' + '?tiaojian=' + escape(q);
+            //location.href = 'search.html?' + 'txt=' + q;
+            window.open(url);
+        }
+        //获取选中视频的编号——往播放详情页面传值
+        function set(c) {
+
+
+
+            var url = 'bofangxiangqing.html' + '?tiaojian=' + escape(c);
+            window.open(url);
+        }
+        //七个推荐视频
+        function myfunction() {
+            console.log("1");
+            $.ajax({
+                url: 'adminH/MoviesH.ashx',
+                type: 'get',
+                data: { 'flag': "11" },
+                success: function (data) {
+                    console.log(data);
+                    $.each(data, function (index, item) {
+                        var MovieID = item.MovieID;
+                        var MovieImg = item.MovieImg;
+                        var MovieNAME = item.MovieNAME;
+                        //var qq = "bofangxiangqing.html";
+                        $("#myul").append('<li ><a onclick="set(' + MovieID + ')"  class="star-pic-list-a" target="_blank" title="' + MovieNAME + '"><img class="scrollLoading" width="140" height="190" src="' + MovieImg + '" alt=""><div class="star-pic1"></div><div class="star-pic2"><p>' + MovieNAME + '</p></div></a></li>');
+
+                        //$("#myul").append('')
+                    })
+                }
+
+            });
+        }
+        //电影大全
+
+        function myfunction12() {
+            $("#dianyingdaquan li").remove();
+            console.log("2");
+            $.ajax({
+                url: "adminH/MoviesH.ashx",
+                type: "get",
+                data: { 'flag': "9" },
+                success: function (data) {
+                    //console.log(data);
+                    $.each(data, function (index, item) {
+                        var MovieID = item.MovieID;
+                        var MovieNAME = item.MovieNAME;
+                        var MovieStarring = item.MovieStarring;
+                        var AreaName = item.AreaName;
+                        var MovieImg = item.MovieImg;
+                        var MoviePrice = item.MoviePrice;
+                        var MovieADDtime = item.MovieADDtime;
+                        var MovieTypeNAME = item.MovieTypeNAME;
+                        var VIPname = item.VIPname;
+
+                        ////    $("#all").append('  <tr class="text-c"><td> <input name="" type="checkbox" value=""></td> <td>'+MovieID+'</td> <td>分类名称</td><td><a href="javascript:;" onclick="picture_edit("picture-show.html","10001")"><img width="210" class="picture-thumb" src="temp/200x150.jpg"></a></td><td class="text-l"><a class="maincolor" href="javascript:;" onclick="picture_edit("图库编辑","picture-show.html","10001")">现代简约 白色 餐厅</a></td><td class="text-c">标签</td><td>2014-6-11 11:11:42</td><td class="td-status"><span class="label label-success radius">正在上映</span></td><td class="td-manage"><a style="text-decoration: none" onclick="picture_stop(this,'10001')" href="javascript:;" title="下架"><i class="Hui-iconfont">&#xe6de;</i></a> <a style="text-decoration: none" class="ml-5" onclick="picture_edit("图库编辑","picture-add.html","10001")" href="javascript:;" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a> <a style="text-decoration: none" class="ml-5" onclick="picture_del(this,'10001')" href="javascript:;" title="删除"><i class="Hui-iconfont">&#xe6e2;</i></a></td></tr>');
+                        //$("#all").append('<tr class="text-c"><td><input name="checkbox" type="checkbox" value=""></td><td name="MovieID">' + MovieID + '</td> <td>' + MovieTypeNAME + '</td> <td><img class="picture-thumb"   style="height:280px;width:210px" src="../' + MovieImg + '"/></td> <td>' + MovieNAME + '</td> <td >' + MoviePrice + '</td> <td class="text-c">' + MovieADDtime + '</td> <td class="td-manage"></a> <a style="text-decoration: none" class="ml-5" onclick="update1()" href="javascript:;" title="修改"><i class="Hui-iconfont">&#xe6df;</i></a> <a style="text-decoration: none" class="ml-5" onclick="delete1()" href="javascript:;" title="删除"><i class="Hui-iconfont">&#xe6e2;</i></a></td></tr>')
+                        //$("#dianyingdaquan").append(' <li class="h-100"><div class="showPlay"><a  onclick="set(' + MovieID + ')" class="tcl-pic" target="_blank" title="' + MovieNAME + '"><div class="tcl-pic1"><img class="scrollLoading" data-url="http://imgwx5.2345.com/dypcimg/img/1/66/sup200108_223x310.jpg" width="200" height="270" src="' + MovieImg + '" alt=""></div><div class="tcl-pic2"></div><div class="tcl-pic3"></div><p class="tcl-pic4">正片</p></a></div><div class="tcl-title"><div class="movie-headline1"><a onclick="set(' + MovieID + ')"   title="' + MovieNAME + '">' + MovieNAME + '</a></div><p>价格：<strong><a target="_self" href="/dianying/list/6-1---0-0---.html" title="' + MoviePrice + '" />' + MoviePrice + '</a></strong></p><p>地区：<strong><a title="大陆" target="_blank" href="/search/results-area-%E5%A4%A7%E9%99%86.html">' + AreaName + '</a></strong></p><p>主演：<strong><a title="王宥钧" target="_blank" href="/search/results-starring-%E7%8E%8B%E5%AE%A5%E9%92%A7.html">' + MovieStarring + '</a></strong></p><p>价格：<strong><a target="_self" href="/dianying/list/7-1---0-0---.html" title="' + MoviePrice + '" />' + MoviePrice + '</a></strong></p></div></li>');
+                        $("#dianyingdaquan").append('<li class="h-100" > <div class="qcontainer1" > <div class="film1" > <div class="face1 front1" > <img src=' + MovieImg + ' style="width: 180px; height: 250px;" /> <p class="tcl-pic4">正片</p> </div>  <div class="face1 back1"> <img src=' + MovieImg + ' style="width: 180px; height: 250px;" /> <div class="tcl-pic2" ></div> <div class="movie-headline1"><a onclick="set(' + MovieID + ')" title=' + MovieNAME + '>' + MovieNAME + '</a></div> <p>价格：<strong><a target="_self" title=' + MoviePrice + '>' + MoviePrice + '</a></strong></p>  </div>  </div>  </div> </li> ')
+                    })
+
+                }
+
+
+            })
+
+        }
+        //电视剧大全
+
+        function myfunction13() {
+            $("#dianshijudaquan li").remove();
+            console.log("3");
+            $.ajax({
+                url: "adminH/MoviesH.ashx",
+                type: "get",
+                data: { 'flag': "10" },
+                success: function (data) {
+                    //console.log(data);
+                    $.each(data, function (index, item) {
+                        var MovieID = item.MovieID;
+                        var MovieNAME = item.MovieNAME;
+                        var MovieStarring = item.MovieStarring;
+                        var AreaName = item.AreaName;
+                        var MovieImg = item.MovieImg;
+                        var MoviePrice = item.MoviePrice;
+                        var MovieADDtime = item.MovieADDtime;
+                        var MovieTypeNAME = item.MovieTypeNAME;
+                        var VIPname = item.VIPname;
+
+                        ////    $("#all").append('  <tr class="text-c"><td> <input name="" type="checkbox" value=""></td> <td>'+MovieID+'</td> <td>分类名称</td><td><a href="javascript:;" onclick="picture_edit("picture-show.html","10001")"><img width="210" class="picture-thumb" src="temp/200x150.jpg"></a></td><td class="text-l"><a class="maincolor" href="javascript:;" onclick="picture_edit("图库编辑","picture-show.html","10001")">现代简约 白色 餐厅</a></td><td class="text-c">标签</td><td>2014-6-11 11:11:42</td><td class="td-status"><span class="label label-success radius">正在上映</span></td><td class="td-manage"><a style="text-decoration: none" onclick="picture_stop(this,'10001')" href="javascript:;" title="下架"><i class="Hui-iconfont">&#xe6de;</i></a> <a style="text-decoration: none" class="ml-5" onclick="picture_edit("图库编辑","picture-add.html","10001")" href="javascript:;" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a> <a style="text-decoration: none" class="ml-5" onclick="picture_del(this,'10001')" href="javascript:;" title="删除"><i class="Hui-iconfont">&#xe6e2;</i></a></td></tr>');
+                        //$("#all").append('<tr class="text-c"><td><input name="checkbox" type="checkbox" value=""></td><td name="MovieID">' + MovieID + '</td> <td>' + MovieTypeNAME + '</td> <td><img class="picture-thumb"   style="height:280px;width:210px" src="../' + MovieImg + '"/></td> <td>' + MovieNAME + '</td> <td >' + MoviePrice + '</td> <td class="text-c">' + MovieADDtime + '</td> <td class="td-manage"></a> <a style="text-decoration: none" class="ml-5" onclick="update1()" href="javascript:;" title="修改"><i class="Hui-iconfont">&#xe6df;</i></a> <a style="text-decoration: none" class="ml-5" onclick="delete1()" href="javascript:;" title="删除"><i class="Hui-iconfont">&#xe6e2;</i></a></td></tr>')
+                        //$("#dianshijudaquan").append(' <li class="h-100"><div class="showPlay"><a  onclick="set(' + MovieID + ')" class="tcl-pic" target="_blank" title="' + MovieNAME + '"><div class="tcl-pic1"><img class="scrollLoading" data-url="http://imgwx5.2345.com/dypcimg/img/1/66/sup200108_223x310.jpg" width="200" height="270" src="' + MovieImg + '" alt=""></div><div class="tcl-pic2"></div><div class="tcl-pic3"></div><p class="tcl-pic4">正片</p></a></div><div class="tcl-title"><div class="movie-headline1"><a onclick="set(' + MovieID + ')"   title="' + MovieNAME + '">' + MovieNAME + '</a></div><p>价格：<strong><a target="_self"  title="' + MoviePrice + '" />' + MoviePrice + '</a></strong></p><p>地区：<strong><a title="大陆" target="_blank" href="/search/results-area-%E5%A4%A7%E9%99%86.html">' + AreaName + '</a></strong></p><p>主演：<strong><a title="王宥钧" target="_blank" href="/search/results-starring-%E7%8E%8B%E5%AE%A5%E9%92%A7.html">' + MovieStarring + '</a></strong></p><p>价格：<strong><a target="_self" href="/dianying/list/7-1---0-0---.html" title="' + MoviePrice + '" />' + MoviePrice + '</a></strong></p></div></li>');
+                        $("#dianshijudaquan").append('<li class="h-100" > <div class="qcontainer1" > <div class="film1" > <div class="face1 front1" > <img src=' + MovieImg + ' style="width: 180px; height: 250px;" /> <p class="tcl-pic4">正片</p> </div>  <div class="face1 back1"> <img src=' + MovieImg + ' style="width: 180px; height: 250px;" /> <div class="tcl-pic2" ></div> <div class="movie-headline1"><a onclick="set(' + MovieID + ')" title=' + MovieNAME + '>' + MovieNAME + '</a></div> <p>价格：<strong><a target="_self" title=' + MoviePrice + '>' + MoviePrice + '</a></strong></p>  </div>  </div>  </div> </li> ')
+
+                    })
+
+                }
+
+
+            })
+
+        }
+        //综艺大全
+        function zongyidaquan() {
+            $("#zongyidaquan li").remove();
+            console.log("3");
+            $.ajax({
+                url: "adminH/MoviesH.ashx",
+                type: "get",
+                data: { 'flag': "12" },
+                success: function (data) {
+                    //console.log(data);
+                    $.each(data, function (index, item) {
+                        var MovieID = item.MovieID;
+                        var MovieNAME = item.MovieNAME;
+                        var MovieStarring = item.MovieStarring;
+                        var AreaName = item.AreaName;
+                        var MovieImg = item.MovieImg;
+                        var MoviePrice = item.MoviePrice;
+                        var MovieADDtime = item.MovieADDtime;
+                        var MovieTypeNAME = item.MovieTypeNAME;
+                        var VIPname = item.VIPname;
+
+                        ////    $("#all").append('  <tr class="text-c"><td> <input name="" type="checkbox" value=""></td> <td>'+MovieID+'</td> <td>分类名称</td><td><a href="javascript:;" onclick="picture_edit("picture-show.html","10001")"><img width="210" class="picture-thumb" src="temp/200x150.jpg"></a></td><td class="text-l"><a class="maincolor" href="javascript:;" onclick="picture_edit("图库编辑","picture-show.html","10001")">现代简约 白色 餐厅</a></td><td class="text-c">标签</td><td>2014-6-11 11:11:42</td><td class="td-status"><span class="label label-success radius">正在上映</span></td><td class="td-manage"><a style="text-decoration: none" onclick="picture_stop(this,'10001')" href="javascript:;" title="下架"><i class="Hui-iconfont">&#xe6de;</i></a> <a style="text-decoration: none" class="ml-5" onclick="picture_edit("图库编辑","picture-add.html","10001")" href="javascript:;" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a> <a style="text-decoration: none" class="ml-5" onclick="picture_del(this,'10001')" href="javascript:;" title="删除"><i class="Hui-iconfont">&#xe6e2;</i></a></td></tr>');
+                        //$("#all").append('<tr class="text-c"><td><input name="checkbox" type="checkbox" value=""></td><td name="MovieID">' + MovieID + '</td> <td>' + MovieTypeNAME + '</td> <td><img class="picture-thumb"   style="height:280px;width:210px" src="../' + MovieImg + '"/></td> <td>' + MovieNAME + '</td> <td >' + MoviePrice + '</td> <td class="text-c">' + MovieADDtime + '</td> <td class="td-manage"></a> <a style="text-decoration: none" class="ml-5" onclick="update1()" href="javascript:;" title="修改"><i class="Hui-iconfont">&#xe6df;</i></a> <a style="text-decoration: none" class="ml-5" onclick="delete1()" href="javascript:;" title="删除"><i class="Hui-iconfont">&#xe6e2;</i></a></td></tr>')
+                        //$("#zongyidaquan").append(' <li class="h-100"><div class="showPlay"><a  onclick="set(' + MovieID + ')" class="tcl-pic" target="_blank" title="' + MovieNAME + '"><div class="tcl-pic1"><img class="scrollLoading" data-url="http://imgwx5.2345.com/dypcimg/img/1/66/sup200108_223x310.jpg" width="200" height="270" src="' + MovieImg + '" alt=""></div><div class="tcl-pic2"></div><div class="tcl-pic3"></div><p class="tcl-pic4">正片</p></a></div><div class="tcl-title"><div class="movie-headline1"><a onclick="set(' + MovieID + ')"   title="' + MovieNAME + '">' + MovieNAME + '</a></div><p>价格：<strong><a target="_self"  title="' + MoviePrice + '" />' + MoviePrice + '</a></strong></p><p>地区：<strong><a title="大陆" target="_blank" href="/search/results-area-%E5%A4%A7%E9%99%86.html">' + AreaName + '</a></strong></p><p>主演：<strong><a title="王宥钧" target="_blank" href="/search/results-starring-%E7%8E%8B%E5%AE%A5%E9%92%A7.html">' + MovieStarring + '</a></strong></p><p>价格：<strong><a target="_self" href="/dianying/list/7-1---0-0---.html" title="' + MoviePrice + '" />' + MoviePrice + '</a></strong></p></div></li>');
+                        $("#zongyidaquan").append('<li class="h-100" > <div class="qcontainer1" > <div class="film1" > <div class="face1 front1" > <img src=' + MovieImg + ' style="width: 180px; height: 250px;" /> <p class="tcl-pic4">正片</p> </div>  <div class="face1 back1"> <img src=' + MovieImg + ' style="width: 180px; height: 250px;" /> <div class="tcl-pic2" ></div> <div class="movie-headline1"><a onclick="set(' + MovieID + ')" title=' + MovieNAME + '>' + MovieNAME + '</a></div> <p>价格：<strong><a target="_self" title=' + MoviePrice + '>' + MoviePrice + '</a></strong></p>  </div>  </div>  </div> </li> ')
+
+                    })
+
+                }
+
+
+            })
+        }
+        //动漫大全
+        function dongmandaquan() {
+            $("#dongmandaquan li").remove();
+            console.log("3");
+            $.ajax({
+                url: "adminH/MoviesH.ashx",
+                type: "get",
+                data: { 'flag': "13" },
+                success: function (data) {
+                    //console.log(data);
+                    $.each(data, function (index, item) {
+                        var MovieID = item.MovieID;
+                        var MovieNAME = item.MovieNAME;
+                        var MovieStarring = item.MovieStarring;
+                        var AreaName = item.AreaName;
+                        var MovieImg = item.MovieImg;
+                        var MoviePrice = item.MoviePrice;
+                        var MovieADDtime = item.MovieADDtime;
+                        var MovieTypeNAME = item.MovieTypeNAME;
+                        var VIPname = item.VIPname;
+
+                        ////    $("#all").append('  <tr class="text-c"><td> <input name="" type="checkbox" value=""></td> <td>'+MovieID+'</td> <td>分类名称</td><td><a href="javascript:;" onclick="picture_edit("picture-show.html","10001")"><img width="210" class="picture-thumb" src="temp/200x150.jpg"></a></td><td class="text-l"><a class="maincolor" href="javascript:;" onclick="picture_edit("图库编辑","picture-show.html","10001")">现代简约 白色 餐厅</a></td><td class="text-c">标签</td><td>2014-6-11 11:11:42</td><td class="td-status"><span class="label label-success radius">正在上映</span></td><td class="td-manage"><a style="text-decoration: none" onclick="picture_stop(this,'10001')" href="javascript:;" title="下架"><i class="Hui-iconfont">&#xe6de;</i></a> <a style="text-decoration: none" class="ml-5" onclick="picture_edit("图库编辑","picture-add.html","10001")" href="javascript:;" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a> <a style="text-decoration: none" class="ml-5" onclick="picture_del(this,'10001')" href="javascript:;" title="删除"><i class="Hui-iconfont">&#xe6e2;</i></a></td></tr>');
+                        //$("#all").append('<tr class="text-c"><td><input name="checkbox" type="checkbox" value=""></td><td name="MovieID">' + MovieID + '</td> <td>' + MovieTypeNAME + '</td> <td><img class="picture-thumb"   style="height:280px;width:210px" src="../' + MovieImg + '"/></td> <td>' + MovieNAME + '</td> <td >' + MoviePrice + '</td> <td class="text-c">' + MovieADDtime + '</td> <td class="td-manage"></a> <a style="text-decoration: none" class="ml-5" onclick="update1()" href="javascript:;" title="修改"><i class="Hui-iconfont">&#xe6df;</i></a> <a style="text-decoration: none" class="ml-5" onclick="delete1()" href="javascript:;" title="删除"><i class="Hui-iconfont">&#xe6e2;</i></a></td></tr>')
+                        //$("#dongmandaquan").append(' <li class="h-100"><div class="showPlay" ><a  onclick="set(' + MovieID + ')" class="tcl-pic" target="_blank" title="' + MovieNAME + '"><div class="tcl-pic1"><img class="scrollLoading" data-url="http://imgwx5.2345.com/dypcimg/img/1/66/sup200108_223x310.jpg" width="200" height="270" src="' + MovieImg + '" alt=""></div><div class="tcl-pic2" ></div><div class="tcl-pic3"></div><p class="tcl-pic4">正片</p></a></div><div class="tcl-title"><div class="movie-headline1"><a onclick="set(' + MovieID + ')"   title="' + MovieNAME + '">' + MovieNAME + '</a></div><p>价格：<strong><a target="_self"  title="' + MoviePrice + '" />' + MoviePrice + '</a></strong></p><p>地区：<strong><a title="大陆" target="_blank" href="/search/results-area-%E5%A4%A7%E9%99%86.html">' + AreaName + '</a></strong></p><p>主演：<strong><a title="王宥钧" target="_blank" href="/search/results-starring-%E7%8E%8B%E5%AE%A5%E9%92%A7.html">' + MovieStarring + '</a></strong></p><p>价格：<strong><a target="_self" href="/dianying/list/7-1---0-0---.html" title="' + MoviePrice + '" />' + MoviePrice + '</a></strong></p></div></li>');
+                        $("#dongmandaquan").append('<li class="h-100" > <div class="qcontainer1" > <div class="film1" > <div class="face1 front1" > <img src=' + MovieImg + ' style="width: 180px; height: 250px;" /> <p class="tcl-pic4">正片</p> </div>  <div class="face1 back1"> <img src=' + MovieImg + ' style="width: 180px; height: 250px;" /> <div class="tcl-pic2" ></div> <div class="movie-headline1"><a onclick="set(' + MovieID + ')" title=' + MovieNAME + '>' + MovieNAME + '</a></div> <p>价格：<strong><a target="_self" title=' + MoviePrice + '>' + MoviePrice + '</a></strong></p>  </div>  </div>  </div> </li> ')
+
+                    })
+
+                }
+
+
+            })
+        }
+        //不可点击
+        function qwe() {
+
+
+            $(".telclist4").click(function () {
+                return false;
+                //$(this).children().click(function () {
+                //    return false;
+                //})
+            });
+
+        }
+
+    </script>
+</head>
+<body>
+    <div class="movie-wrap">
+        <div class="zt-top" id="zt-top">
+            <div class="zt-top-inner" id="zt-top-inner">
+                <div class="zt-top-left zt-fl">
+                    <ul class="zt-top-classify-ul">
+                        <li><span class="about">伐木累影院，分享最新影视资源</span>
+                    </ul>
+                </div>
+                <div class="zt-top-right zt-fr">
+                    <ul class="zt-top-collect-ul">
+                        <li id="denglu" class="zt-top-home-position"><a rel="nofollow" href="dengluyemian.html" title="">登陆</a></li>
+                        <li><a id="q3" href="gerenzhongxin.html">个人中心</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--头部开始-->
+        <div class="movie-header">
+            <div class="movie-header-search">
+                <div class="mhs-inner">
+                    <div class="logo fl"><a href="/" title="伐木累影院">伐木累影院</a></div>
+                    <!--导航-->
+                    <div class="header-nav">
+                        <div class="nav-btn bgray"><span>分类导航</span> </div>
+                        <!--nav-btn-->
+                        <div class="nav-content bgray">
+                            <div class="nav-c-share clearfix">
+                                <a href="/" class="ncs-line fl" title="伐木累影院">首页</a>
+                                <a href="Movie.html" class="ncs-line fl" title="电影">电影</a>
+                                <a href="dianshiju.html" class="ncs-line fl" title="电视剧">电视剧</a>
+                                <a href="zongyi.html" class="ncs-line fl" title="综艺">综艺</a>
+                                <a href="dongman.html" class="ncs-line fl" title="动漫">动漫</a>
+
+
+                            </div>
+                            <!--nav-c-share-->
+                            <div class="nav-c-share mb0"></div>
+                        </div>
+                        <!--nav-content-->
+                    </div>
+                    <!--header-nav-->
+                    <!--导航结束-->
+                    <div class="search home-search fl" style="border: 0px solid red">
+                        <div class="search-inner">
+                            <form action="/search/" method="post">
+                                <input type="text" x-webkit-speech="" autocomplete="off" name="wd" id="wd" class="search-text search-text1" onblur="if(this.value==''){ this.value='精彩视频任你搜索';this.style.color='#cfcdcd';}" onfocus="if(this.value=='精彩视频任你搜索'){this.value='';this.style.color='';}" value="精彩视频任你搜索">
+                                <input type="hidden" name="submit">
+                                <!--<input type=""  class="search-btn" value="搜索">-->
+                                <a id="btn2" onclick="select()" class="search-btn" style="text-align: center; line-height: 40px">搜索</a>
+                            </form>
+
+                            <div class="search-list">
+                                <div class="search-list-left fl">
+                                    <ul class="search-list-ul" id="search-list-ul">
+                                    </ul>
+                                </div>
+                                <div class="search-list-right fr">
+                                    <div class="slr-inner" id="slr-inner"></div>
+                                </div>
+                                <div class="search-list-right"></div>
+                            </div>
+                            <!--search-list-->
+                        </div>
+                        <!--search-inner-->
+
+                    </div>
+                    <!--search-->
+                    <div style="width: 185px; height: 90px; border: 0px solid red; position: fixed; margin-left: 884px; margin-top: 10px;">
+                        <label id="q1">欢迎您：</label>
+                        <input type="button" id="q2" value="" disabled="disabled" />
+                        <!--<input  type="button" id="q3" value="个人中心" onclick=""  />-->
+
+                        <!--<label id="q2" ></label>-->
+
+                    </div>
+                    <!-- <div class="watch-wrap fr" style="border:1px solid red">-->
+                    <div class="watch-record fr">
+                        <div class="watch-box" id="history">
+                            <div class="watch-icon"></div>
+                            观看记录
+            <div class="watch-icon2"></div>
+                        </div>
+                    </div>
+                    <!--watch-record-->
+                </div>
+                <!--watch-wrap-->
+            </div>
+            <!--mhs-inner-->
+        </div>
+        <div class="movie-header-menu height-100">
+            <div class="mhm-inner mhm-share">
+                <div class="mhm-menu">
+                    <ul class="nhm-menu-ul font-100">
+                        <li class="active-style5"><a href="/" title="伐木累影院">首页</a></li>
+
+                        <li><a href="Movie.html" title="电影">电影</a></li>
+
+                        <li><a href="dianshiju.html" title="电视剧">电视剧</a></li>
+
+                        <li><a href="zongyi.html" title="综艺">综艺</a></li>
+
+                        <li><a href="dongman.html" title="动漫">动漫</a></li>
+
+
+                    </ul>
+                    <ul class="nhm-menu-ul nmu3 fr mem">
+                        <li class="active-style5 font-100"><a href="/" title="伐木累影院">伐木累影院</a></li>
+                    </ul>
+                    <div class="active-style"></div>
+                </div>
+            </div>
+            <!--mhs-inner-->
+            <div class="mhm-inner-bottom mhm-share"></div>
+        </div>
+    </div>
+    <!--movie-header-->
+
+    <!--轮播图开始-->
+    <div id="banner">
+        <div class="banner-inner">
+            <div class="banner-pic">
+                <ul class="banner-pic-inner">
+
+                    <li class="pic-01" style="display: block; background: url('static/images/20180306225951962.jpg_1660x550.jpg') center" style="display: none; background: url('http://4img.hitv.com/preview/cms_icon/2018/03/20180306225951962.jpg_1660x550.jpg') center">
+                        <a href="dianshiju.htmldetail/53260.html" target="_blank" title="老男孩"></a>
+                    </li>
+
+                    <li class="pic-01" style="display: none; background: url('static/images/20180306231343415.jpg_1660x550.jpg') center">
+                        <a href="dianshiju.htmldetail/52963.html" target="_blank" title="我站在桥上看风景"></a>
+                    </li>
+
+                    <li class="pic-01" style="display: none; background: url('static/images/20180303231512600.jpg_1660x550.jpg') center">
+                        <a href="dianshiju.htmldetail/53058.html" target="_blank" title="谈判官"></a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="banner-btn-wrap">
+                <div class="banner-btn">
+                    <div class="banner-btn-list">
+                        <ul class="banner-btn-inner">
+
+                            <li class="add-active"><i></i>
+                                <img width='90' height='60' src="static/picture/sup33361_223x310.jpg" alt=""></li>
+
+                            <li class="add-active"><i></i>
+                                <img width='90' height='60' src="static/picture/sup54255_223x310.jpg" alt=""></li>
+
+                            <li class="add-active"><i></i>
+                                <img width='90' height='60' src="static/picture/sup52897_223x310.jpg" alt=""></li>
+
+                        </ul>
+                        <ul class="banner-intro-ul">
+
+                            <li style="display: block;" style="display: none;">
+                                <a href="dianshiju.htmldetail/53260.html" title="老男孩">老男孩</a>
+                            </li>
+
+                            <li style="display: none;">
+                                <a href="dianshiju.htmldetail/52963.html" title="我站在桥上看风景">我站在桥上看风景</a>
+                            </li>
+
+                            <li style="display: none;">
+                                <a href="dianshiju.htmldetail/53058.html" title="谈判官">谈判官</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <!--banner-btn-list-->
+                    <div class="banner-swap-btn"><a rel="nofollow" href="javascript:;" class="left-btn"></a><a rel="nofollow" href="javascript:;" class="right-btn"></a></div>
+                </div>
+                <div class="banner-intro"></div>
+                <!--banner-intro-->
+            </div>
+        </div>
+        <!--banner-inner-->
+    </div>
+    <!--banner-->
+    <!--内容开始-->
+
+    <div class="container">
+        <div class="container-inner">
+            <!--影视明星开始-->
+            <div class="con3 star-bot">
+                <div class="splendid-header">
+                    <div class="fl"><span>推荐</span>影视</div>
+                </div>
+
+                <!--//循环开始-->
+                <!-- <table id="tab1">
+                        <tbody>-->
+
+                <div class="star-pic">
+                    <ul class="star-pic-list" id="myul">
+                    </ul>
+                </div>
+                <!--</tbody>
+
+
+                    </table>-->
+
+
+                <!-- <div class="star-pic">
+                        <ul class="star-pic-list" id="">
+
+                            <li><a href="Movie.htmldetail/48050.html" class="star-pic-list-a" target="_blank" title="速度与激情8">
+                                <img class="scrollLoading" width="140" height="190" data-url="http://imgwx4.2345.com/dypcimg/img/2/48/sup146828_223x310.jpg" src="static/picture/pic.png" alt="">
+                                <div class="star-pic1"></div>
+                                <div class="star-pic2">
+                                    <p>速度与激情8</p>
+                                </div>
+                            </a></li>
+
+                            <li><a href="Movie.htmldetail/49906.html" class="star-pic-list-a" target="_blank" title="拆弹专家">
+                                <img class="scrollLoading" width="140" height="190" data-url="http://imgwx3.2345.com/dypcimg/img/c/63/sup190386_223x310.jpg" src="static/picture/pic.png" alt="">
+                                <div class="star-pic1"></div>
+                                <div class="star-pic2">
+                                    <p>拆弹专家</p>
+                                </div>
+                            </a></li>
+
+                            <li><a href="Movie.htmldetail/44192.html" class="star-pic-list-a" target="_blank" title="疯狂试爱">
+                                <img class="scrollLoading" width="140" height="190" data-url="http://photocdn.sohu.com/kis/fengmian/1200/1200112/1200112_ver_big.jpg" src="static/picture/pic.png" alt="">
+                                <div class="star-pic1"></div>
+                                <div class="star-pic2">
+                                    <p>疯狂试爱</p>
+                                </div>
+                            </a></li>
+
+                            <li><a href="Movie.htmldetail/49648.html" class="star-pic-list-a" target="_blank" title="绯闻女生">
+                                <img class="scrollLoading" width="140" height="190" data-url="http://imgwx5.2345.com/dypcimg/img/e/64/sup193066_223x310.jpg" src="static/picture/pic.png" alt="">
+                                <div class="star-pic1"></div>
+                                <div class="star-pic2">
+                                    <p>绯闻女生</p>
+                                </div>
+                            </a></li>
+
+                            <li><a href="Movie.htmldetail/49461.html" class="star-pic-list-a" target="_blank" title="青春我爱你">
+                                <img class="scrollLoading" width="140" height="190" data-url="http://photocdn.sohu.com/kis/fengmian/1212/1212232/1212232_ver_big_20170607101002.jpg" src="static/picture/pic.png" alt="">
+                                <div class="star-pic1"></div>
+                                <div class="star-pic2">
+                                    <p>青春我爱你</p>
+                                </div>
+                            </a></li>
+
+                            <li><a href="Movie.htmldetail/49434.html" class="star-pic-list-a" target="_blank" title="夜店北京3真爱夜蒲">
+                                <img class="scrollLoading" width="140" height="190" data-url="http://photocdn.sohu.com/kis/fengmian/1212/1212193/1212193_ver_big_20170605100032.jpg" src="static/picture/pic.png" alt="">
+                                <div class="star-pic1"></div>
+                                <div class="star-pic2">
+                                    <p>夜店北京3真爱夜蒲</p>
+                                </div>
+                            </a></li>
+
+                            <li><a href="Movie.htmldetail/49362.html" class="star-pic-list-a" target="_blank" title="我的女神女汉子">
+                                <img class="scrollLoading" width="140" height="190" data-url="http://imgwx1.2345.com/dypcimg/img/9/61/sup183923_223x310.jpg" src="static/picture/pic.png" alt="">
+                                <div class="star-pic1"></div>
+                                <div class="star-pic2">
+                                    <p>我的女神女汉子</p>
+                                </div>
+                            </a></li>
+
+                        </ul>
+                    </div>-->
+
+
+
+            </div>
+            <!--con3-->
+            <!--电影开始-->
+            <div class="con2 margin-bottom-share">
+                <div class="teleplay">
+                    <div class="teleplay-left fl">
+                        <div class="splendid-header">
+                            <div class="fl"><a href="Movie.htmllist/1-1---0-0---.html" title="电影大全"><span>电影</span>大全</a>  </div>
+                        </div>
+                        <!--splendid-header-->
+                        <div class="teleplay-content">
+                            <div class="teleplay-content-inner" style="display: block; ">
+                                <ul class="teleplay-content-list" id="dianyingdaquan">
+                                    <!--//开始-->
+
+
+
+                                    
+                                        
+                                            
+                                                
+                                                    
+                                                    
+                                                
+                                               
+                                                    
+                                                    
+                                                    
+                                                    
+                                            
+
+                                   
+
+
+
+                                    <!--//结束-->
+                                </ul>
+                            </div>
+                            <!--teleplay-content-inner-->
+                        </div>
+                        <!--teleplay-content-->
+                    </div>
+                    <!--teleplay-left-->
+                    <div class="teleplay-right fr">
+                        <div class="recommend-header">
+                            <div class="fl"><span>电影</span>排行榜</div>
+                            <a href="Movie.htmllist/1-1---0-0---.html" class="teleplay-more" target="_blank" title="电影排行榜">更多&gt;</a>
+                        </div>
+                        <div class="teleplay-content">
+                            <ul class="teleplay-con-list telclist4 tcl1 jinyong" id="isdianji">
+
+
+                                <li class="list-no1"><span></span><i>1</i> <a href="Movie.htmldetail/47731.html" class="list-no1-pic" target="_blank" title="">
+                                    <img class="scrollLoading" data-url="http://imgwx1.2345.com/dypcimg/img/1/58/sup174392_223x310.jpg" width="90" height="120" src="static/picture/pic.png" alt=""></a>
+                                    <div class="list-no1-con">
+                                        <a onclick="return false;" href="Movie.htmldetail/47731.html" class="no1-tv-title" target="_blank" title="金刚：骷髅岛">金刚：骷髅岛</a>
+                                        <p class="top-desc">影片的故事将发生在20世纪70年代，美国宇航局启......</p>
+                                        <p class="pview">播放指数:正片</p>
+                                        <a href="Movie.htmldetail/47731.html" target="_blank" class="top-btn" title="">查看详情</a>
+                                    </div>
+                                </li>
+
+
+
+
+
+                                <li><i>2</i><span class="views">超清</span><a href="Movie.htmldetail/7305.html" target="_blank" title="绝密跟踪">绝密跟踪</a></li>
+
+
+
+
+                                <li><i>3</i><span class="views">正片</span><a href="Movie.htmldetail/45909.html" target="_blank" title="心火2017">心火2017</a></li>
+
+
+
+
+                                <li><i>4</i><span class="views">正片</span><a href="Movie.htmldetail/23638.html" target="_blank" title="湄公河行动">湄公河行动</a></li>
+
+
+
+
+                                <li><i>5</i><span class="views">正片</span><a href="Movie.htmldetail/22201.html" target="_blank" title="微微一笑很倾城(电影版)">微微一笑很倾城(电影版)</a></li>
+
+
+
+
+                                <li><i>6</i><span class="views">正片</span><a href="Movie.htmldetail/39929.html" target="_blank" title="圆梦巨人">圆梦巨人</a></li>
+
+
+
+
+                                <li><i>7</i><span class="views">正片</span><a href="Movie.htmldetail/22199.html" target="_blank" title="危城">危城</a></li>
+
+
+
+
+                                <li><i>8</i><span class="views">正片</span><a href="Movie.htmldetail/22198.html" target="_blank" title="盗墓笔记">盗墓笔记</a></li>
+
+
+
+
+                                <li><i>9</i><span class="views">吴孟达冲击影帝之作</span><a href="Movie.htmldetail/43047.html" target="_blank" title="导火新闻线">导火新闻线</a></li>
+
+
+
+
+                                <li><i>10</i><span class="views">完整版</span><a href="Movie.htmldetail/47732.html" target="_blank" title="金刚狼3：殊死一战">金刚狼3：殊死一战</a></li>
+
+
+
+
+                                <li><i>11</i><span class="views">正片</span><a href="Movie.htmldetail/46427.html" target="_blank" title="铁道飞虎">铁道飞虎</a></li>
+
+
+
+
+                                <li><i>12</i><span class="views">正片</span><a href="Movie.htmldetail/43929.html" target="_blank" title="龙之谷：精灵王座">龙之谷：精灵王座</a></li>
+
+
+
+
+                                <li><i>13</i><span class="views">正片</span><a href="Movie.htmldetail/46672.html" target="_blank" title="情圣">情圣</a></li>
+
+
+
+
+                                <li><i>14</i><span class="views">正片</span><a href="Movie.htmldetail/41511.html" target="_blank" title="我不是潘金莲">我不是潘金莲</a></li>
+
+
+
+
+                                <li><i>15</i><span class="views">正片</span><a href="Movie.htmldetail/22202.html" target="_blank" title="寒战2">寒战2</a></li>
+
+
+
+
+                                <li><i>16</i><span class="views">正片</span><a href="Movie.htmldetail/5011.html" target="_blank" title="既然青春留不住">既然青春留不住</a></li>
+
+
+
+
+                                <li><i>17</i><span class="views">高清</span><a href="Movie.htmldetail/24167.html" target="_blank" title="大话西游3">大话西游3</a></li>
+
+
+
+
+                                <li><i>18</i><span class="views">正片</span><a href="Movie.htmldetail/24045.html" target="_blank" title="僵尸世界大战">僵尸世界大战</a></li>
+
+
+
+
+                                <li><i>19</i><span class="views">正片</span><a href="Movie.htmldetail/45702.html" target="_blank" title="生化危机6：终章 ">生化危机6：终章 </a></li>
+
+
+
+
+                                <li><i>20</i><span class="views">高清</span><a href="Movie.htmldetail/23580.html" target="_blank" title="釜山行">釜山行</a></li>
+
+
+                            </ul>
+                        </div>
+                        <!--teleplay-content-->
+                    </div>
+                    <!--teleplay-right-->
+                </div>
+                <!--teleplay-->
+            </div>
+            <!--con2-->
+            <!--电视剧开始-->
+            <div class="con2 margin-bottom-share">
+                <div class="teleplay">
+                    <div class="teleplay-left fl">
+                        <div class="splendid-header">
+                            <div class="fl"><a href="dianshiju.htmllist/2-1---0-0---.html" title="电视剧大全"><span>电视剧</span>大全</a>  </div>
+                        </div>
+                        <!--splendid-header-->
+                        <div class="teleplay-content">
+                            <div class="teleplay-content-inner" style="display: block;">
+                                <ul class="teleplay-content-list" id="dianshijudaquan">
+
+                                    <!-- <li>
+                                            <div class="showPlay">
+                                                <a href="dianshiju.htmldetail/53562.html" class="tcl-pic" target="_blank" title="灵与肉">
+                                                    <div class="tcl-pic1">
+                                                        <img class="scrollLoading" data-url="http://imgwx5.2345.com/dypcimg/tv/img/e/18/sup54922_223x310.jpg" width="200" height="270" src="static/picture/pic.png" alt="">
+                                                    </div>
+                                                    <div class="tcl-pic2"></div>
+                                                </a>
+                                            </div>
+                                            <div class="tcl-title">
+                                                <div class="movie-headline1"><a href="dianshiju.htmldetail/53562.html" target="_blank" title="灵与肉">灵与肉</a></div>
+                                                <p>主演：<strong><a title='于小伟' target='_blank' href='/search/results-starring-%E4%BA%8E%E5%B0%8F%E4%BC%9F.html'>于小伟</a></strong><strong><a title='孙茜' target='_blank' href='/search/results-starring-%E5%AD%99%E8%8C%9C.html'>孙茜</a></strong><strong><a title='王全有' target='_blank' href='/search/results-starring-%E7%8E%8B%E5%85%A8%E6%9C%89.html'>王全有</a></strong><strong><a title='丛珊' target='_blank' href='/search/results-starring-%E4%B8%9B%E7%8F%8A.html'>丛珊</a></strong><strong><a title='尤勇智' target='_blank' href='/search/results-starring-%E5%B0%A4%E5%8B%87%E6%99%BA.html'>尤勇智</a></strong></p>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="showPlay">
+                                                <a href="dianshiju.htmldetail/53561.html" class="tcl-pic" target="_blank" title="为了你我愿意热爱整个世界">
+                                                    <div class="tcl-pic1">
+                                                        <img class="scrollLoading" data-url="http://imgwx5.2345.com/dypcimg/tv/img/2/17/sup53517_223x310.jpg" width="200" height="270" src="static/picture/pic.png" alt="">
+                                                    </div>
+                                                    <div class="tcl-pic2"></div>
+                                                </a>
+                                            </div>
+                                            <div class="tcl-title">
+                                                <div class="movie-headline1"><a href="dianshiju.htmldetail/53561.html" target="_blank" title="为了你我愿意热爱整个世界">为了你我愿意热爱整个世界</a></div>
+                                                <p>主演：<strong><a title='罗晋' target='_blank' href='/search/results-starring-%E7%BD%97%E6%99%8B.html'>罗晋</a></strong><strong><a title='郑爽' target='_blank' href='/search/results-starring-%E9%83%91%E7%88%BD.html'>郑爽</a></strong><strong><a title='张艺上' target='_blank' href='/search/results-starring-%E5%BC%A0%E8%89%BA%E4%B8%8A.html'>张艺上</a></strong><strong><a title='庞瀚辰' target='_blank' href='/search/results-starring-%E5%BA%9E%E7%80%9A%E8%BE%B0.html'>庞瀚辰</a></strong><strong><a title='杨金承' target='_blank' href='/search/results-starring-%E6%9D%A8%E9%87%91%E6%89%BF.html'>杨金承</a></strong></p>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="showPlay">
+                                                <a href="dianshiju.htmldetail/53518.html" class="tcl-pic" target="_blank" title="天涯女人心">
+                                                    <div class="tcl-pic1">
+                                                        <img class="scrollLoading" data-url="http://imgwx4.2345.com/dypcimg/tv/img/e/16/sup48805_223x310.jpg" width="200" height="270" src="static/picture/pic.png" alt="">
+                                                    </div>
+                                                    <div class="tcl-pic2"></div>
+                                                </a>
+                                            </div>
+                                            <div class="tcl-title">
+                                                <div class="movie-headline1"><a href="dianshiju.htmldetail/53518.html" target="_blank" title="天涯女人心">天涯女人心</a></div>
+                                                <p>主演：<strong><a title='薛佳凝' target='_blank' href='/search/results-starring-%E8%96%9B%E4%BD%B3%E5%87%9D.html'>薛佳凝</a></strong><strong><a title='郑凯' target='_blank' href='/search/results-starring-%E9%83%91%E5%87%AF.html'>郑凯</a></strong><strong><a title='宗峰岩' target='_blank' href='/search/results-starring-%E5%AE%97%E5%B3%B0%E5%B2%A9.html'>宗峰岩</a></strong><strong><a title='赵锦焘' target='_blank' href='/search/results-starring-%E8%B5%B5%E9%94%A6%E7%84%98.html'>赵锦焘</a></strong></p>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="showPlay">
+                                                <a href="dianshiju.htmldetail/53520.html" class="tcl-pic" target="_blank" title="钟馗捉妖记">
+                                                    <div class="tcl-pic1">
+                                                        <img class="scrollLoading" data-url="http://imgwx4.2345.com/dypcimg/tv/img/e/17/sup52862_223x310.jpg" width="200" height="270" src="static/picture/pic.png" alt="">
+                                                    </div>
+                                                    <div class="tcl-pic2"></div>
+                                                </a>
+                                            </div>
+                                            <div class="tcl-title">
+                                                <div class="movie-headline1"><a href="dianshiju.htmldetail/53520.html" target="_blank" title="钟馗捉妖记">钟馗捉妖记</a></div>
+                                                <p>主演：<strong><a title='杨蓉' target='_blank' href='/search/results-starring-%E6%9D%A8%E8%93%89.html'>杨蓉</a></strong><strong><a title='杨旭文' target='_blank' href='/search/results-starring-%E6%9D%A8%E6%97%AD%E6%96%87.html'>杨旭文</a></strong><strong><a title='麦迪娜' target='_blank' href='/search/results-starring-%E9%BA%A6%E8%BF%AA%E5%A8%9C.html'>麦迪娜</a></strong><strong><a title='李子峰' target='_blank' href='/search/results-starring-%E6%9D%8E%E5%AD%90%E5%B3%B0.html'>李子峰</a></strong><strong><a title='丁子峻' target='_blank' href='/search/results-starring-%E4%B8%81%E5%AD%90%E5%B3%BB.html'>丁子峻</a></strong></p>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="showPlay">
+                                                <a href="dianshiju.htmldetail/53517.html" class="tcl-pic" target="_blank" title="功夫之爱的速递">
+                                                    <div class="tcl-pic1">
+                                                        <img class="scrollLoading" data-url="http://imgwx3.2345.com/dypcimg/tv/img/f/18/sup54849_223x310.jpg" width="200" height="270" src="static/picture/pic.png" alt="">
+                                                    </div>
+                                                    <div class="tcl-pic2"></div>
+                                                </a>
+                                            </div>
+                                            <div class="tcl-title">
+                                                <div class="movie-headline1"><a href="dianshiju.htmldetail/53517.html" target="_blank" title="功夫之爱的速递">功夫之爱的速递</a></div>
+                                                <p>主演：<strong><a title='杜淳' target='_blank' href='/search/results-starring-%E6%9D%9C%E6%B7%B3.html'>杜淳</a></strong><strong><a title='姚笛' target='_blank' href='/search/results-starring-%E5%A7%9A%E7%AC%9B.html'>姚笛</a></strong><strong><a title='释小龙' target='_blank' href='/search/results-starring-%E9%87%8A%E5%B0%8F%E9%BE%99.html'>释小龙</a></strong><strong><a title='韩烨高姝瑶' target='_blank' href='/search/results-starring-%E9%9F%A9%E7%83%A8%E9%AB%98%E5%A7%9D%E7%91%B6.html'>韩烨高姝瑶</a></strong></p>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="showPlay">
+                                                <a href="dianshiju.htmldetail/53506.html" class="tcl-pic" target="_blank" title="想看你微笑">
+                                                    <div class="tcl-pic1">
+                                                        <img class="scrollLoading" data-url="http://imgwx2.2345.com/dypcimg/tv/img/f/18/sup54846_223x310.jpg" width="200" height="270" src="static/picture/pic.png" alt="">
+                                                    </div>
+                                                    <div class="tcl-pic2"></div>
+                                                </a>
+                                            </div>
+                                            <div class="tcl-title">
+                                                <div class="movie-headline1"><a href="dianshiju.htmldetail/53506.html" target="_blank" title="想看你微笑">想看你微笑</a></div>
+                                                <p>主演：<strong><a title='李汶翰杜雨宸侯俊丞刘倩妏林世杰' target='_blank' href='/search/results-starring-%E6%9D%8E%E6%B1%B6%E7%BF%B0%E6%9D%9C%E9%9B%A8%E5%AE%B8%E4%BE%AF%E4%BF%8A%E4%B8%9E%E5%88%98%E5%80%A9%E5%A6%8F%E6%9E%97%E4%B8%96%E6%9D%B0.html'>李汶翰杜雨宸侯俊丞刘倩妏林世杰</a></strong></p>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="showPlay">
+                                                <a href="dianshiju.htmldetail/53497.html" class="tcl-pic" target="_blank" title="如果，爱">
+                                                    <div class="tcl-pic1">
+                                                        <img class="scrollLoading" data-url="http://imgwx4.2345.com/dypcimg/tv/img/8/18/sup54765_223x310.jpg" width="200" height="270" src="static/picture/pic.png" alt="">
+                                                    </div>
+                                                    <div class="tcl-pic2"></div>
+                                                </a>
+                                            </div>
+                                            <div class="tcl-title">
+                                                <div class="movie-headline1"><a href="dianshiju.htmldetail/53497.html" target="_blank" title="如果，爱">如果，爱</a></div>
+                                                <p>主演：<strong><a title='张柏芝' target='_blank' href='/search/results-starring-%E5%BC%A0%E6%9F%8F%E8%8A%9D.html'>张柏芝</a></strong><strong><a title='徐志贤吴建豪' target='_blank' href='/search/results-starring-%E5%BE%90%E5%BF%97%E8%B4%A4%E5%90%B4%E5%BB%BA%E8%B1%AA.html'>徐志贤吴建豪</a></strong><strong><a title='倪景阳' target='_blank' href='/search/results-starring-%E5%80%AA%E6%99%AF%E9%98%B3.html'>倪景阳</a></strong><strong><a title='黄烁文' target='_blank' href='/search/results-starring-%E9%BB%84%E7%83%81%E6%96%87.html'>黄烁文</a></strong></p>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="showPlay">
+                                                <a href="dianshiju.htmldetail/53496.html" class="tcl-pic" target="_blank" title="像我们一样年轻">
+                                                    <div class="tcl-pic1">
+                                                        <img class="scrollLoading" data-url="http://imgwx4.2345.com/dypcimg/tv/img/7/18/sup54696_223x310.jpg" width="200" height="270" src="static/picture/pic.png" alt="">
+                                                    </div>
+                                                    <div class="tcl-pic2"></div>
+                                                </a>
+                                            </div>
+                                            <div class="tcl-title">
+                                                <div class="movie-headline1"><a href="dianshiju.htmldetail/53496.html" target="_blank" title="像我们一样年轻">像我们一样年轻</a></div>
+                                                <p>主演：<strong><a title='陈翔' target='_blank' href='/search/results-starring-%E9%99%88%E7%BF%94.html'>陈翔</a></strong><strong><a title='陈瑶' target='_blank' href='/search/results-starring-%E9%99%88%E7%91%B6.html'>陈瑶</a></strong><strong><a title='卢杉' target='_blank' href='/search/results-starring-%E5%8D%A2%E6%9D%89.html'>卢杉</a></strong><strong><a title='刘恩佑' target='_blank' href='/search/results-starring-%E5%88%98%E6%81%A9%E4%BD%91.html'>刘恩佑</a></strong><strong><a title='赵立新' target='_blank' href='/search/results-starring-%E8%B5%B5%E7%AB%8B%E6%96%B0.html'>赵立新</a></strong></p>
+                                            </div>
+                                        </li>-->
+
+                                </ul>
+                            </div>
+                            <!--teleplay-content-inner-->
+                        </div>
+                        <!--teleplay-content-->
+                    </div>
+                    <!--teleplay-left-->
+                    <div class="teleplay-right fr">
+                        <div class="recommend-header">
+                            <div class="fl"><span>电视剧</span>排行榜</div>
+                            <a href="dianshiju.htmllist/2-1---0-0---.html" class="teleplay-more" target="_blank" title="电视剧排行榜">更多&gt;</a>
+                        </div>
+                        <div class="teleplay-content">
+                            <ul class="teleplay-con-list telclist4 tcl1 jinyong">
+
+
+                                <li class="list-no1"><span></span><i>1</i> <a href="dianshiju.htmldetail/39292.html" class="list-no1-pic" target="_blank" title="">
+                                    <img class="scrollLoading" data-url="http://g2.ykimg.com/0516000058252F2E67BC3C7B0109FE14.jpg" width="90" height="120" src="static/picture/pic.png" alt=""></a>
+                                    <div class="list-no1-con">
+                                        <a href="dianshiju.htmldetail/39292.html" class="no1-tv-title" target="_blank" title="锦绣未央">锦绣未央</a>
+                                        <p class="top-desc">南北朝期间，群雄逐鹿，烽烟四起，战事纷争不断。出......</p>
+                                        <p class="pview">播放指数:54集全</p>
+                                        <a href="dianshiju.htmldetail/39292.html" target="_blank" class="top-btn" title="">查看详情</a>
+                                    </div>
+                                </li>
+
+
+
+
+
+                                <li><i>2</i><span class="views">18集全</span><a href="dianshiju.htmldetail/41880.html" target="_blank" title="青云志2">青云志2</a></li>
+
+
+
+
+                                <li><i>3</i><span class="views">61集全</span><a href="dianshiju.htmldetail/38829.html" target="_blank" title="第22条婚规2">第22条婚规2</a></li>
+
+
+
+
+                                <li><i>4</i><span class="views">21集全</span><a href="dianshiju.htmldetail/43323.html" target="_blank" title="鬼吹灯之精绝古城">鬼吹灯之精绝古城</a></li>
+
+
+
+
+                                <li><i>5</i><span class="views">62集全</span><a href="dianshiju.htmldetail/22196.html" target="_blank" title="幻城 TV版">幻城 TV版</a></li>
+
+
+
+
+                                <li><i>6</i><span class="views">12集全</span><a href="dianshiju.htmldetail/43431.html" target="_blank" title="无间道 第一季">无间道 第一季</a></li>
+
+
+
+
+                                <li><i>7</i><span class="views">47集全</span><a href="dianshiju.htmldetail/23639.html" target="_blank" title="兰陵王妃">兰陵王妃</a></li>
+
+
+
+
+                                <li><i>8</i><span class="views">40集全</span><a href="dianshiju.htmldetail/22277.html" target="_blank" title="致青春">致青春</a></li>
+
+
+
+
+                                <li><i>9</i><span class="views">24集全</span><a href="dianshiju.htmldetail/46159.html" target="_blank" title="热血长安 第一季">热血长安 第一季</a></li>
+
+
+
+
+                                <li><i>10</i><span class="views">38集全</span><a href="dianshiju.htmldetail/42930.html" target="_blank" title="放弃我，抓紧我 TV版">放弃我，抓紧我 TV版</a></li>
+
+
+
+
+                                <li><i>11</i><span class="views">20集全</span><a href="dianshiju.htmldetail/23917.html" target="_blank" title="疯狂天后">疯狂天后</a></li>
+
+
+
+
+                                <li><i>12</i><span class="views">30集全</span><a href="dianshiju.htmldetail/22200.html" target="_blank" title="微微一笑很倾城">微微一笑很倾城</a></li>
+
+
+
+
+                                <li><i>13</i><span class="views">19集全</span><a href="dianshiju.htmldetail/40399.html" target="_blank" title="陈二狗的妖孽人生第二季  ">陈二狗的妖孽人生第二季  </a></li>
+
+
+
+
+                                <li><i>14</i><span class="views">更新至12集</span><a href="dianshiju.htmldetail/39844.html" target="_blank" title="蓝色大海的传说">蓝色大海的传说</a></li>
+
+
+
+
+                                <li><i>15</i><span class="views">20集全</span><a href="dianshiju.htmldetail/24220.html" target="_blank" title="法医秦明">法医秦明</a></li>
+
+
+
+
+                                <li><i>16</i><span class="views">更新至8集</span><a href="dianshiju.htmldetail/22307.html" target="_blank" title="神盾局特工 第四季">神盾局特工 第四季</a></li>
+
+
+
+
+                                <li><i>17</i><span class="views">60集全</span><a href="dianshiju.htmldetail/43274.html" target="_blank" title="权力的游戏（全集）">权力的游戏（全集）</a></li>
+
+
+
+
+                                <li><i>18</i><span class="views">26集全</span><a href="dianshiju.htmldetail/40132.html" target="_blank" title="28岁未成年">28岁未成年</a></li>
+
+
+
+
+                                <li><i>19</i><span class="views">12集全</span><a href="dianshiju.htmldetail/22267.html" target="_blank" title="识汝不识丁">识汝不识丁</a></li>
+
+
+
+
+                                <li><i>20</i><span class="views">40集全</span><a href="dianshiju.htmldetail/22221.html" target="_blank" title="柠檬初上 未删减版">柠檬初上 未删减版</a></li>
+
+
+                            </ul>
+                        </div>
+                        <!--teleplay-content-->
+                    </div>
+                    <!--teleplay-right-->
+                </div>
+                <!--teleplay-->
+            </div>
+            <!--con2-->
+            <!--综艺开始-->
+            <div class="con2 margin-bottom-share">
+                <div class="teleplay">
+                    <div class="teleplay-left fl">
+                        <div class="splendid-header">
+                            <div class="fl"><a href="zongyi.htmllist/3-1---0-0---.html" title="综艺大全"><span>综艺</span>大全</a>  </div>
+                        </div>
+                        <!--splendid-header-->
+                        <div class="teleplay-content">
+                            <div class="teleplay-content-inner" style="display: block;">
+                                <ul class="teleplay-content-list" id="zongyidaquan">
+                                </ul>
+                            </div>
+                            <!--teleplay-content-inner-->
+                        </div>
+                        <!--teleplay-content-->
+                    </div>
+                    <!--teleplay-left-->
+                    <div class="teleplay-right fr">
+                        <div class="recommend-header">
+                            <div class="fl"><span>综艺</span>排行榜</div>
+                            <a href="zongyi.htmllist/3-1---0-0---.html" class="teleplay-more" target="_blank" title="综艺排行榜">更多&gt;</a>
+                        </div>
+                        <div class="teleplay-content">
+                            <ul class="teleplay-con-list telclist4 tcl1 jinyong">
+
+
+                                <li class="list-no1"><span></span><i>1</i> <a href="zongyi.htmldetail/45350.html" class="list-no1-pic" target="_blank" title="">
+                                    <img class="scrollLoading" data-url="http://imgwx4.2345.com/dypcimgzongyi.htmlimg/a/11/sup33420_223x310.jpg" width="90" height="120" src="static/picture/pic.png" alt=""></a>
+                                    <div class="list-no1-con">
+                                        <a href="zongyi.htmldetail/45350.html" class="no1-tv-title" target="_blank" title="明星大侦探 第二季">明星大侦探 第二季</a>
+                                        <p class="top-desc">2017年最值得期待的综艺强势回归！《明星大侦探......</p>
+                                        <p class="pview">播放指数:</p>
+                                        <a href="zongyi.htmldetail/45350.html" target="_blank" class="top-btn" title="">查看详情</a>
+                                    </div>
+                                </li>
+
+
+
+
+
+                                <li><i>2</i><span class="views">19集全</span><a href="zongyi.htmldetail/23857.html" target="_blank" title="全娱乐早扒点 2016 10月">全娱乐早扒点 2016 10月</a></li>
+
+
+
+
+                                <li><i>3</i><span class="views">更新至20161231</span><a href="zongyi.htmldetail/23512.html" target="_blank" title="下一站幸福 2016">下一站幸福 2016</a></li>
+
+
+
+
+                                <li><i>4</i><span class="views">更新至20161231</span><a href="zongyi.htmldetail/23549.html" target="_blank" title="金牌调解 2016">金牌调解 2016</a></li>
+
+
+
+
+                                <li><i>5</i><span class="views">更新至20161231</span><a href="zongyi.htmldetail/23561.html" target="_blank" title="一转成双 2016">一转成双 2016</a></li>
+
+
+
+
+                                <li><i>6</i><span class="views">更新至20161229</span><a href="zongyi.htmldetail/23554.html" target="_blank" title="爱情保卫战 2016">爱情保卫战 2016</a></li>
+
+
+
+
+                                <li><i>7</i><span class="views">更新至20161228</span><a href="zongyi.htmldetail/23550.html" target="_blank" title="金星秀 2016">金星秀 2016</a></li>
+
+
+
+
+                                <li><i>8</i><span class="views">更新至22集</span><a href="zongyi.htmldetail/40595.html" target="_blank" title="一犬一话 2016">一犬一话 2016</a></li>
+
+
+
+
+                                <li><i>9</i><span class="views">更新至20170209</span><a href="zongyi.htmldetail/45828.html" target="_blank" title="为梦想加速 第三季">为梦想加速 第三季</a></li>
+
+
+
+
+                                <li><i>10</i><span class="views">更新至34集</span><a href="zongyi.htmldetail/46051.html" target="_blank" title="玩趣屋小猪佩奇的故事 第一季">玩趣屋小猪佩奇的故事 第一季</a></li>
+
+
+
+
+                                <li><i>11</i><span class="views">更新至20161009</span><a href="zongyi.htmldetail/40482.html" target="_blank" title="中国民歌大会 2016">中国民歌大会 2016</a></li>
+
+
+
+
+                                <li><i>12</i><span class="views">更新至120集</span><a href="zongyi.htmldetail/24134.html" target="_blank" title="仓鼠宝宝适时早教全策略0-3岁 2016">仓鼠宝宝适时早教全策略0-3岁 2016</a></li>
+
+
+
+
+                                <li><i>13</i><span class="views">更新至20160410</span><a href="zongyi.htmldetail/24617.html" target="_blank" title="带着爸妈去旅行 第二季">带着爸妈去旅行 第二季</a></li>
+
+
+
+
+                                <li><i>14</i><span class="views">53集全</span><a href="zongyi.htmldetail/45547.html" target="_blank" title="中央电视台春节联欢晚会 2017">中央电视台春节联欢晚会 2017</a></li>
+
+
+
+
+                                <li><i>15</i><span class="views">更新至3集</span><a href="zongyi.htmldetail/23932.html" target="_blank" title="一起下厨吧 2016">一起下厨吧 2016</a></li>
+
+
+
+
+                                <li><i>16</i><span class="views">更新至25集</span><a href="zongyi.htmldetail/23831.html" target="_blank" title="【YIYI】搞笑配音西游系列短片 2016">【YIYI】搞笑配音西游系列短片 2016</a></li>
+
+
+
+
+                                <li><i>17</i><span class="views">更新至11集</span><a href="zongyi.htmldetail/44591.html" target="_blank" title="徐行 2017">徐行 2017</a></li>
+
+
+
+
+                                <li><i>18</i><span class="views">更新至1集</span><a href="zongyi.htmldetail/23937.html" target="_blank" title="康熙来了 VR版 2016">康熙来了 VR版 2016</a></li>
+
+
+
+
+                                <li><i>19</i><span class="views">更新至20170105</span><a href="zongyi.htmldetail/23496.html" target="_blank" title="男生女生向前冲 第八季">男生女生向前冲 第八季</a></li>
+
+
+
+
+                                <li><i>20</i><span class="views">更新至5集</span><a href="zongyi.htmldetail/45528.html" target="_blank" title="梨桃美妆 2017">梨桃美妆 2017</a></li>
+
+
+                            </ul>
+                        </div>
+                        <!--teleplay-content-->
+                    </div>
+                    <!--teleplay-right-->
+                </div>
+                <!--teleplay-->
+            </div>
+            <!--con2-->
+            <!--动漫开始-->
+            <div class="con2 margin-bottom-share">
+                <div class="teleplay">
+                    <div class="teleplay-left fl">
+                        <div class="splendid-header">
+                            <div class="fl"><a href="dongman.htmllist/4-1---0-0---.html" title="动漫大全"><span>动漫</span>大全</a>  </div>
+                        </div>
+                        <!--splendid-header-->
+                        <div class="teleplay-content">
+                            <div class="teleplay-content-inner" style="display: block;">
+                                <ul class="teleplay-content-list" id="dongmandaquan">
+
+                                    <!--<li>
+                                            <div class="showPlay">
+                                                <a href="dongman.htmldetail/41824.html" class="tcl-pic" target="_blank" title="画江湖之杯莫停">
+                                                    <div class="tcl-pic1">
+                                                        <img class="scrollLoading" data-url="http://g3.ykimg.com/05160000582421BA67BC3C7A2503A1B7.jpg" width="200" height="270" src="static/picture/pic.png" alt="">
+                                                    </div>
+                                                    <div class="tcl-pic2"></div>
+                                                </a>
+                                            </div>
+                                            <div class="tcl-title">
+                                                <div class="movie-headline1"><a href="dongman.htmldetail/41824.html" target="_blank" title="画江湖之杯莫停">画江湖之杯莫停</a></div>
+                                                <p>剧情简介:故事发生在一个惟权力与力量至上</p>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="showPlay">
+                                                <a href="dongman.htmldetail/44733.html" class="tcl-pic" target="_blank" title="神明之胄 第2季">
+                                                    <div class="tcl-pic1">
+                                                        <img class="scrollLoading" data-url="http://imgwx3.2345.com/dypcimgdongman.htmlimg/a/25/sup75510_223x310.jpg" width="200" height="270" src="static/picture/pic.png" alt="">
+                                                    </div>
+                                                    <div class="tcl-pic2"></div>
+                                                </a>
+                                            </div>
+                                            <div class="tcl-title">
+                                                <div class="movie-headline1"><a href="dongman.htmldetail/44733.html" target="_blank" title="神明之胄 第2季">神明之胄 第2季</a></div>
+                                                <p>小鱼和小伙伴们终于成为了图腾战士。为了对</p>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="showPlay">
+                                                <a href="dongman.htmldetail/41827.html" class="tcl-pic" target="_blank" title="灵域 第4季">
+                                                    <div class="tcl-pic1">
+                                                        <img class="scrollLoading" data-url="http://imgwx3.2345.com/dypcimgdongman.htmlimg/f/24/sup74925_223x310.jpg" width="200" height="270" src="static/picture/pic.png" alt="">
+                                                    </div>
+                                                    <div class="tcl-pic2"></div>
+                                                </a>
+                                            </div>
+                                            <div class="tcl-title">
+                                                <div class="movie-headline1"><a href="dongman.htmldetail/41827.html" target="_blank" title="灵域 第4季">灵域 第4季</a></div>
+                                                <p>秦烈和同伴们继续在秘境神葬场中进行着残酷</p>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="showPlay">
+                                                <a href="dongman.htmldetail/44193.html" class="tcl-pic" target="_blank" title="生死回放">
+                                                    <div class="tcl-pic1">
+                                                        <img class="scrollLoading" data-url="http://imgwx2.2345.com/dypcimgdongman.htmlimg/8/22/sup68755_223x310.jpg" width="200" height="270" src="static/picture/pic.png" alt="">
+                                                    </div>
+                                                    <div class="tcl-pic2"></div>
+                                                </a>
+                                            </div>
+                                            <div class="tcl-title">
+                                                <div class="movie-headline1"><a href="dongman.htmldetail/44193.html" target="_blank" title="生死回放">生死回放</a></div>
+                                                <p>在一次噩梦般的旅行中，魏死死发现自己拥有</p>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="showPlay">
+                                                <a href="dongman.htmldetail/44282.html" class="tcl-pic" target="_blank" title="斗破苍穹">
+                                                    <div class="tcl-pic1">
+                                                        <img class="scrollLoading" data-url="http://imgwx1.2345.com/dypcimgdongman.htmlimg/c/25/sup75459_223x310.jpg" width="200" height="270" src="static/picture/pic.png" alt="">
+                                                    </div>
+                                                    <div class="tcl-pic2"></div>
+                                                </a>
+                                            </div>
+                                            <div class="tcl-title">
+                                                <div class="movie-headline1"><a href="dongman.htmldetail/44282.html" target="_blank" title="斗破苍穹">斗破苍穹</a></div>
+                                                <p>萧炎，主人公，萧家历史上空前绝后的斗气修</p>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="showPlay">
+                                                <a href="dongman.htmldetail/21737.html" class="tcl-pic" target="_blank" title="最动漫">
+                                                    <div class="tcl-pic1">
+                                                        <img class="scrollLoading" data-url="http://g2.ykimg.com/05160000576CFAC167BC3C0AB3097479.jpg" width="200" height="270" src="static/picture/pic.png" alt="">
+                                                    </div>
+                                                    <div class="tcl-pic2"></div>
+                                                </a>
+                                            </div>
+                                            <div class="tcl-title">
+                                                <div class="movie-headline1"><a href="dongman.htmldetail/21737.html" target="_blank" title="最动漫">最动漫</a></div>
+                                                <p>剧情简介:优酷土豆动漫自制节目《最动漫》</p>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="showPlay">
+                                                <a href="dongman.htmldetail/22115.html" class="tcl-pic" target="_blank" title="无英雄不联盟">
+                                                    <div class="tcl-pic1">
+                                                        <img class="scrollLoading" data-url="http://g2.ykimg.com/0516000055C8125D67BC3C5C6B079D06.jpg" width="200" height="270" src="static/picture/pic.png" alt="">
+                                                    </div>
+                                                    <div class="tcl-pic2"></div>
+                                                </a>
+                                            </div>
+                                            <div class="tcl-title">
+                                                <div class="movie-headline1"><a href="dongman.htmldetail/22115.html" target="_blank" title="无英雄不联盟">无英雄不联盟</a></div>
+                                                <p>剧情简介:改编自游戏《英雄联盟》的卡通版</p>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="showPlay">
+                                                <a href="dongman.htmldetail/23774.html" class="tcl-pic" target="_blank" title="无敌极光侠">
+                                                    <div class="tcl-pic1">
+                                                        <img class="scrollLoading" data-url="http://g4.ykimg.com/051600005790739067BC3C3B0F036D09.jpg" width="200" height="270" src="static/picture/pic.png" alt="">
+                                                    </div>
+                                                    <div class="tcl-pic2"></div>
+                                                </a>
+                                            </div>
+                                            <div class="tcl-title">
+                                                <div class="movie-headline1"><a href="dongman.htmldetail/23774.html" target="_blank" title="无敌极光侠">无敌极光侠</a></div>
+                                                <p>剧情简介:主人公所在的城市位于一片沙漠之</p>
+                                            </div>
+                                        </li>-->
+
+                                </ul>
+                            </div>
+                            <!--teleplay-content-inner-->
+                        </div>
+                        <!--teleplay-content-->
+                    </div>
+                    <!--teleplay-left-->
+                    <div class="teleplay-right fr">
+                        <div class="recommend-header">
+                            <div class="fl"><span>动漫</span>排行榜</div>
+                            <a href="dongman.htmllist/4-1---0-0---.html" class="teleplay-more" target="_blank" title="动漫排行榜">更多&gt;</a>
+                        </div>
+                        <div class="teleplay-content">
+                            <ul class="teleplay-con-list telclist4 tcl1 jinyong">
+
+
+                                <li class="list-no1"><span></span><i>1</i> <a href="dongman.htmldetail/19653.html" class="list-no1-pic" target="_blank" title="">
+                                    <img class="scrollLoading" data-url="http://g2.ykimg.com/051600005563E58467BC3C1E0C049028.jpg" width="90" height="120" src="static/picture/pic.png" alt=""></a>
+                                    <div class="list-no1-con">
+                                        <a href="dongman.htmldetail/19653.html" class="no1-tv-title" target="_blank" title="火影忍者">火影忍者</a>
+                                        <p class="top-desc">剧情简介:十多年前一只拥有巨大威力的妖兽“九尾妖......</p>
+                                        <p class="pview">播放指数:更新至713集</p>
+                                        <a href="dongman.htmldetail/19653.html" target="_blank" class="top-btn" title="">查看详情</a>
+                                    </div>
+                                </li>
+
+
+
+
+
+                                <li><i>2</i><span class="views">26集全</span><a href="dongman.htmldetail/22553.html" target="_blank" title="星学院II月灵手环">星学院II月灵手环</a></li>
+
+
+
+
+                                <li><i>3</i><span class="views">更新至30集</span><a href="dongman.htmldetail/22535.html" target="_blank" title=" 画江湖之不良人 第二季"> 画江湖之不良人 第二季</a></li>
+
+
+
+
+                                <li><i>4</i><span class="views">更新至12集</span><a href="dongman.htmldetail/39846.html" target="_blank" title="狩梦人">狩梦人</a></li>
+
+
+
+
+                                <li><i>5</i><span class="views">12集全</span><a href="dongman.htmldetail/23972.html" target="_blank" title="终物语">终物语</a></li>
+
+
+
+
+                                <li><i>6</i><span class="views">52集全</span><a href="dongman.htmldetail/45084.html" target="_blank" title="Larva 第三季">Larva 第三季</a></li>
+
+
+
+
+                                <li><i>7</i><span class="views">50集全</span><a href="dongman.htmldetail/44095.html" target="_blank" title="积木育儿脱口秀 第二季">积木育儿脱口秀 第二季</a></li>
+
+
+
+
+                                <li><i>8</i><span class="views">更新至6集</span><a href="dongman.htmldetail/44805.html" target="_blank" title="路人coser的养成方法">路人coser的养成方法</a></li>
+
+
+
+
+                                <li><i>9</i><span class="views">更新至40集</span><a href="dongman.htmldetail/43730.html" target="_blank" title="麦杰克的音乐魔法Show">麦杰克的音乐魔法Show</a></li>
+
+
+
+
+                                <li><i>10</i><span class="views">更新至6集</span><a href="dongman.htmldetail/44509.html" target="_blank" title="赛罗奥特曼 英雄传">赛罗奥特曼 英雄传</a></li>
+
+
+
+
+                                <li><i>11</i><span class="views">更新至26集</span><a href="dongman.htmldetail/43981.html" target="_blank" title="哈喽!葡星人">哈喽!葡星人</a></li>
+
+
+
+
+                                <li><i>12</i><span class="views">1集全</span><a href="dongman.htmldetail/46006.html" target="_blank" title="青鬼 剧场版">青鬼 剧场版</a></li>
+
+
+
+
+                                <li><i>13</i><span class="views">26集全</span><a href="dongman.htmldetail/39617.html" target="_blank" title="猪迪克之古怪岛大冒险1">猪迪克之古怪岛大冒险1</a></li>
+
+
+
+
+                                <li><i>14</i><span class="views">52集全</span><a href="dongman.htmldetail/23796.html" target="_blank" title="小p优优 央视特别版">小p优优 央视特别版</a></li>
+
+
+
+
+                                <li><i>15</i><span class="views">10集全</span><a href="dongman.htmldetail/23745.html" target="_blank" title="南方公园 第十九季">南方公园 第十九季</a></li>
+
+
+
+
+                                <li><i>16</i><span class="views">更新至10集</span><a href="dongman.htmldetail/24568.html" target="_blank" title="魔法少女 Naria Girls">魔法少女 Naria Girls</a></li>
+
+
+
+
+                                <li><i>17</i><span class="views">更新至114集</span><a href="dongman.htmldetail/23911.html" target="_blank" title="霹雳天命之仙魔鏖锋 国语版">霹雳天命之仙魔鏖锋 国语版</a></li>
+
+
+
+
+                                <li><i>18</i><span class="views">更新至22集</span><a href="dongman.htmldetail/40486.html" target="_blank" title="购物精灵 Shopkins">购物精灵 Shopkins</a></li>
+
+
+
+
+                                <li><i>19</i><span class="views">更新至6集</span><a href="dongman.htmldetail/41747.html" target="_blank" title="艾莲娜公主">艾莲娜公主</a></li>
+
+
+
+
+                                <li><i>20</i><span class="views">12集全</span><a href="dongman.htmldetail/24143.html" target="_blank" title="超级飞侠帮帮忙">超级飞侠帮帮忙</a></li>
+
+
+                            </ul>
+                        </div>
+                        <!--teleplay-content-->
+                    </div>
+                    <!--teleplay-right-->
+                </div>
+                <!--teleplay-->
+            </div>
+            <!--con2-->
+            <!--微电影开始-->
+            <!--con2-->
+        </div>
+        <!--container-inner-->
+    </div>
+    <!--container-->
+    <div class="zt-footer" id="zt-footer">
+        <div class="zt-footerx-inner" id="zt-footerx-inner">
+            <a href="/" title="伐木累影院">伐木累影院</a> <a href="/" title="伐木累电影院">伐木累电影院</a> <a href="/" title="yy伐木累影院">yy伐木累影院</a> <a href="/" title="6029伐木累影院">6029伐木累影院</a> <a href="/" title="3198伐木累影院">3198伐木累影院</a>
+        </div>
+        <div class="zt-footer-inner" id="zt-footer-inner">
+            <ul class="zt-footer-about zt-fl about-other-1">
+                本站所有视频均来自互联网，版权归原创者所有，如果侵犯了您的权益，请通知我们【邮箱：<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="784b49414841484b484d380909561b1715">[email&#160;protected]</a>】，我们会及时删除侵权内容，谢谢！<br>
+                Copyright © 2016-2017 <a href="/" title="伐木累影院">伐木累影院</a> - <a href="/about/map-pg-1.html" title="网站地图">网站地图</a> - <a href="/baidu.xml" title="百度地图">百度地图</a> - <a href="/rss.xml" title="RSS订阅">RSS订阅</a>
+            </ul>
+        </div>
+        <div class="dis-100">
+            <script data-cfasync="false" src="static/js/email-decode.min.js"></script>
+            <script type="text/javascript" src='static/js/tongji.js'></script>
+        </div>
+    </div>
+    </div>
+    <!--<a href="qwe()" onclick="">123456</a>-->
+    <!--movie-wrap-->
+    <!--<script src="jquery.min.js"></script>-->
+
+
+</body>
+</html>

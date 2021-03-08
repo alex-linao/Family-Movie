@@ -1,0 +1,9 @@
+D:\学习\第二项目\WebApplication2\MovieBLL\bin\Release\MovieBLL.dll
+D:\学习\第二项目\WebApplication2\MovieBLL\bin\Release\MovieBLL.pdb
+D:\学习\第二项目\WebApplication2\MovieBLL\bin\Release\MovieDAL.dll
+D:\学习\第二项目\WebApplication2\MovieBLL\bin\Release\MovieModel.dll
+D:\学习\第二项目\WebApplication2\MovieBLL\bin\Release\MovieDAL.pdb
+D:\学习\第二项目\WebApplication2\MovieBLL\bin\Release\MovieModel.pdb
+D:\学习\第二项目\WebApplication2\MovieBLL\obj\Release\MovieBLL.csprojResolveAssemblyReference.cache
+D:\学习\第二项目\WebApplication2\MovieBLL\obj\Release\MovieBLL.dll
+D:\学习\第二项目\WebApplication2\MovieBLL\obj\Release\MovieBLL.pdb

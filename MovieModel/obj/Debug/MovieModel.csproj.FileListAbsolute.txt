@@ -1,0 +1,13 @@
+D:\学习\第二项目\WebApplication2\MovieModel\bin\Debug\MovieModel.dll
+D:\学习\第二项目\WebApplication2\MovieModel\bin\Debug\MovieModel.pdb
+D:\学习\第二项目\WebApplication2\MovieModel\obj\Debug\MovieModel.dll
+D:\学习\第二项目\WebApplication2\MovieModel\obj\Debug\MovieModel.pdb
+C:\Users\admin\Desktop\第二项目\WebApplication2\MovieModel\bin\Debug\MovieModel.dll
+C:\Users\admin\Desktop\第二项目\WebApplication2\MovieModel\bin\Debug\MovieModel.pdb
+C:\Users\admin\Desktop\第二项目\WebApplication2\MovieModel\obj\Debug\MovieModel.dll
+C:\Users\admin\Desktop\第二项目\WebApplication2\MovieModel\obj\Debug\MovieModel.pdb
+C:\Users\个人专用文件夹\第二项目\WebApplication2\MovieModel\bin\Debug\MovieModel.dll
+C:\Users\个人专用文件夹\第二项目\WebApplication2\MovieModel\bin\Debug\MovieModel.pdb
+C:\Users\个人专用文件夹\第二项目\WebApplication2\MovieModel\obj\Debug\MovieModel.csproj.CoreCompileInputs.cache
+C:\Users\个人专用文件夹\第二项目\WebApplication2\MovieModel\obj\Debug\MovieModel.dll
+C:\Users\个人专用文件夹\第二项目\WebApplication2\MovieModel\obj\Debug\MovieModel.pdb

@@ -1,0 +1,4 @@
+D:\学习\第二项目\WebApplication2\MovieModel\bin\Release\MovieModel.dll
+D:\学习\第二项目\WebApplication2\MovieModel\bin\Release\MovieModel.pdb
+D:\学习\第二项目\WebApplication2\MovieModel\obj\Release\MovieModel.dll
+D:\学习\第二项目\WebApplication2\MovieModel\obj\Release\MovieModel.pdb
